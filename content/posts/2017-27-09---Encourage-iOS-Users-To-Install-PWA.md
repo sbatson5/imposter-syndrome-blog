@@ -157,3 +157,5 @@ moduleForAcceptance('Acceptance | add to homescreen', {
 That will reset it after each test in this module and shouldn’t interfere with the rest of your test suite.
 
 Until iOS automatically recognizes and prompts the user when a PWA is detected, finding workarounds for engagement is your best bet. Luckily, modern browsers make it easy to see and track which users are running your app in `standalone` mode, allowing you to take the proper action.
+
+*Originally published by [Scott Batson](https://github.com/sbatson5) on [DockYard's Blog](https://dockyard.com/blog/2017/09/27/encouraging-pwa-installation-on-ios).*

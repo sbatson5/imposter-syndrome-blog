@@ -3,7 +3,7 @@ title: "Why Should You Care About WebAssembly?"
 date: "2018-05-14T22:12:03.284Z"
 template: "post"
 draft: false
-slug: "/posts/the-birth-of-movable-type/"
+slug: "/posts/why-you-should-care-about-webasembly/"
 category: "Engineering"
 tags:
   - "WebAssembly"
@@ -83,3 +83,5 @@ So now our process can look like this:
 1. Any garbage collection
 
 Now you can have parts of your application running at the same speed as native apps. Although we won’t _completely_ remove JavaScript from the equation, a lot of computation can be moved to these lower level, compiled languages. For most web developers, these gains will come from third-party packages their apps consume and they won’t have to write any WebAssembly themselves. But just because you may not be writing it directly, that doesn’t mean it’s not handy to understand what is happening under the hood.
+
+*Originally published by [Scott Batson](https://github.com/sbatson5) on [DockYard's Blog](https://dockyard.com/blog/2018/05/14/intro-to-web-assembly).*
