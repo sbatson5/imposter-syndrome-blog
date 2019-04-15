@@ -12,6 +12,8 @@ tags:
 description: "Why should you care about WebAssembly as a JavaScript Developer?"
 ---
 
+![Laptop with notebook](https://i.imgur.com/uK49oVY.jpg)
+
 # WebAssembly In Ember?
 There was a lot of really interesting topics of discussion at this year’s EmberConf — especially in the opening keynote by Tom Dale and Yehuda Katz. They closed out the talk by discussing [their work in glimmer with WebAssembly](https://youtu.be/NhtpXs0ZtUc?t=35m54s). In fact, they even showed a [version of the EmberConf website](https://schedule-wasm.emberconf.com/) running in WebAssembly (although it was [broken in iOS](https://www.construct.net/blogs/construct-official-blog-1/apple-broke-webassembly-and-are-leaving-it-broken-898) due to a vulnerability).
 

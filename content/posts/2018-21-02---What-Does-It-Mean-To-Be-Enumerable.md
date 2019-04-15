@@ -12,6 +12,8 @@ tags:
 description: "Understanding the enumerable property and JavaScript `Object.prototype` properties"
 ---
 
+![Inspecting math papers](https://i.imgur.com/7JgR7X5.jpg)
+
 # Enumerable
 When you start learning any programming language (especially JavaScript) there are a lot of terms to digest at once. Some of them are taught formally: your course work, tutorials or videos most likely cover functions, objects, arrays, etc. Then there are some that you just pick up on your own by seeing them: state, scope, etc. For me, there were always a few terms that everyone seemed to understand but me. The first was “Enumerable.”
 
@@ -118,4 +120,4 @@ If you didn’t know about prototype extensions in Ember and want them disabled,
 ## Conclusion
 You might not write many for...in loops but it is still handy to know how to add properties like this to your objects. You may see a lot of documentation about `__defineGetter__` or `__lookupGetter__` but these are being deprecated in favor of defineProperty and getOwnPropertyDescriptor and are no longer considered private methods.
 
-*Originally published by [Scott Batson](http://matejlatin.co.uk/) on [DockYard's Blog](https://dockyard.com/blog/2018/02/21/what-does-it-mean-to-be-enumerable).*
+*Originally published by [Scott Batson](https://github.com/sbatson5) on [DockYard's Blog](https://dockyard.com/blog/2018/02/21/what-does-it-mean-to-be-enumerable).*
