@@ -11,7 +11,9 @@ tags:
 description: "I worked remotely for two and a half years. There were a few things I liked and a few things I didn't.  What is it really like to work from home?"
 ---
 
-![Files stacked](https://i.imgur.com/0cQwcjJ.jpg)
+![Home Office](/media/home-office.jpg)
+
+<aside>Photo by Piotr Wilk on Unsplash</aside>
 
 If you work in the tech industry, you have no doubt wondered about working remotely.
 I can't even count the number of tweets and blog posts I've come across that talk about how working remote is not only a perk, but the inevitable future for engineers.
