@@ -5,6 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/what-does-it-mean-to-be-enumerable/"
 category: "Engineering"
+banner: "https://i.imgur.com/7JgR7X5.jpg"
 tags:
   - "Engineering"
   - "JavaScript"

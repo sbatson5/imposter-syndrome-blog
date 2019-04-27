@@ -5,6 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/why-you-should-care-about-webasembly/"
 category: "Engineering"
+banner: "https://i.imgur.com/uK49oVY.jpg"
 tags:
   - "WebAssembly"
   - "Wasm"
