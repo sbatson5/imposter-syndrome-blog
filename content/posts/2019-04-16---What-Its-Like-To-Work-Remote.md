@@ -5,6 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/what-its-like-to-work-remote/"
 category: "Engineering"
+banner: "https://imposter-syndrome.lol/media/home-office.jpg"
 tags:
   - "Engineering"
   - "Lifestyle"
