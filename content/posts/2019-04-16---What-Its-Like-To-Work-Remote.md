@@ -1,6 +1,6 @@
 ---
 title: "What It's Like To Work Remote"
-date: "2019-04-16T12:05:03.284Z"
+date: "2019-04-27T12:05:03.284Z"
 template: "post"
 draft: false
 slug: "/posts/what-its-like-to-work-remote/"
@@ -8,7 +8,7 @@ category: "Engineering"
 tags:
   - "Engineering"
   - "Lifestyle"
-description: "I worked remotely for two and a half years. There were a few things I liked and a few things I didn't.  What is it really like to work from home?"
+description: "I worked remotely for two and a half years. There were a few things I liked and a few things I didn't.  What is it really like to work from home full time?"
 ---
 
 ![Home Office](/media/home-office.jpg)
