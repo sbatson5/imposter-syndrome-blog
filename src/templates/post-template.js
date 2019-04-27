@@ -11,13 +11,14 @@ const PostTemplate = ({ data }) => {
 
   const {
     title: postTitle,
-    description: postDescription
+    description: postDescription,
+    banner: postBanner
   } = data.markdownRemark.frontmatter;
 
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} image={postBanner}>
       <Post post={data.markdownRemark} />
     </Layout>
   );
@@ -47,6 +48,7 @@ export const query = graphql`
         tagSlugs
       }
       frontmatter {
+        banner
         date
         description
         tags

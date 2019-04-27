@@ -5,6 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/enouraging-ios-users-to-install/"
 category: "Engineering"
+banner: "https://i.imgur.com/XQEysi6.jpg"
 tags:
   - "PWA"
   - "JavaScript"
