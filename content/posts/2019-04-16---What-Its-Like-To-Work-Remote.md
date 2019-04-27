@@ -12,7 +12,6 @@ description: "I worked remotely for two and a half years. There were a few thing
 ---
 
 ![Home Office](/media/home-office.jpg)
-
 <aside>Photo by Piotr Wilk on Unsplash</aside>
 
 If you work in the tech industry, you have no doubt wondered about working remotely.
@@ -84,6 +83,9 @@ Being able to wake up, make breakfast and walk ten feet to your office is an ama
 
 # Why go back to an office?
 
+![Upstatement Office](/media/upstatement-office.jpg)
+<aside>My actual office</aside>
+
 One of the common things I would hear from people who had never worked from home was:
 <figure>
 	<blockquote>
@@ -102,25 +104,25 @@ My reasons for not wanting to be remote anymore really had nothing to do with mo
 ## Learning is harder
 
 One thing that you don't quite realize until you start working from home, is that you do not pick up new skills as quickly.
-You learn so much just from the people around you -- whether it's from overhearing conversations about new technologies or being able to ask a question quickly.
+You learn so much just from the people around you -- whether it's from overhearing conversations about new technologies or being able to ask someone an offhand question.
 Seeking out a solution or discovering someone else has run into the same problem you have, is much more difficult over slack.
 You have to actively tune into those conversations when working remotely and when you're busy or heads down on an issue, there's almost no way you'll see a conversation that doesn't directly involve you.
 
 Past that, if you want to learn something, you need to actively take steps to do it.
 I really had to set aside more time to read through documentation, watch tutorials and more when working from home.
-Finding a mentor (or establishing any professional relationship, really) is much harder over slack and other communication tools.
+Finding a mentor (or establishing any professional relationship, really) is much harder over messaging apps and email.
 
-## Asking for help
+## Asking for help is more difficult
 
-When you are stuck on something and you know there is a person who can fix an issue for you or grant you permissions to an API or talk through how something is implemented, but they aren't available, it can be infuriating.
+When you are stuck on something and you know there is a person who can fix an issue for you, grant you permissions to an API or talk through how something is implemented, but they aren't available, it can be infuriating.
 That's true for remote and in-person offices.
 The difference (I found) is that in an office, I can glance over to someone's desk and see whether or not they are engaged with something before bothering them.
 Or, better, I can catch them while I'm grabbing a coffee or stretching my legs and that exchange of information can happen organically.
-Working remote, there is no "oh, can you shoot me an invite?" type conversations that happens in passing.
+Working remote, there is no "oh, can you shoot me an invite?" type conversations that can happen in passing.
 Asking someone for a favor or advice is very deliberate and asynchronous -- you may end up sitting on your hands for quite a while before you get a response.
 
 We all have days when we feel unproductive, but I felt they were doubly so when working from home.
-After all, it's not like you could look to your right and ask your neighbor if they needed help with anything.
+After all, it's not like you could look to your right and ask your neighbor to talk through something.
 
 ## Engineering is a human endeavor
 
@@ -134,7 +136,7 @@ We went through a hiring rush (within a year we had hired almost 40 new people).
 I admittedly found some of these new coworkers standoffish at first or I felt like I couldn't possibly gel with them on a long project.
 It wasn't until we had a retreat or work trip and I got to meet everyone in person that I began to understand them as people.
 I had a lot of moments of "oh, he just has a really dry sense of humor" or "oh, she just likes getting her thoughts out first and isn't actually trying to dictate."
-I couldn't have picked up on these nuances through just slack alone and I started really looking forward to work trips for this reason.
+I couldn't have picked up on these nuances through just slack alone and I started looking forward to those work trips for just that reason.
 
 ## Yeah, it gets isolating
 
@@ -156,15 +158,21 @@ After all, I used to really enjoy the occasional day from home, so I truly thoug
 It wasn't like I didn't talk to people online (I was lucky enough to have some close friends at my company), but socializing through chat never quite fills that gap.
 In fact, I probably ended up overcompensating and wasting more time on messenger apps than I should have to make up for the lack of interaction (...maybe I wasn't as productive as I thought...).
 
-## But working from home is the future
+I missed the occasional walks to get coffee.
+I missed the random lunches or drinks after work.
+I think most people need that socializing in some way and the times I noticed it the most, are the weekends when I didn't have plans.
+Working in an office, I looked forward to a weekend with downtime to catch up on reading or a tv show.
+But when I worked from home and didn't see people regularly, those weekends of "down time" were grueling.
 
-I had a lot of coworkers and friends who said they could never go back to working in an office, and I certainly get the appeal for them.
+## But working from home is the future!
+
+I had a lot of coworkers and friends who said they could never go back to working in an office.
 Our slack was often filled with blog posts or tweets from "thought leaders" talking about how it was the only way forward for a lot of companies.
 Granted, I think a lot of that was just self-assurance but it still made me feel like I was the outlier.
 I knew within a year that I wouldn't be able to do remote work forever but I kept telling myself to stick it out because of how much the community seemed to support it.
 
 Maybe it makes more sense from the perspective of a company versus an individual.
-Maybe it's just the latest trend in an industry of every-changing trends.
+Maybe it's just the latest trend in an industry of ever-changing trends.
 I won't pretend to have the answers.
 I just wish someone had reassured me when I was feeling isolated in my home office:
 
