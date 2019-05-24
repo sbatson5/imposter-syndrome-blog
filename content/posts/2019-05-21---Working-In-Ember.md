@@ -5,21 +5,20 @@ template: "post"
 draft: false
 slug: "/posts/working-in-ember/"
 category: "Engineering"
-banner: "https://imposter-syndrome.lol/media/home-office.jpg"
+banner: "https://i.imgur.com/bM8ljia.jpg"
 tags:
   - "Engineering"
   - "Lifestyle"
-description: ""
+description: "After years of working in Ember, I recently took a job working in other technologies. I thought I'd take a moment to reflect on my time with the framework."
 ---
 
-![Home Office](/media/home-office.jpg)
-<aside>Photo by Piotr Wilk on Unsplash</aside>
+![Laptop and notepad](https://i.imgur.com/bM8ljia.jpg)
+<aside>Photo by Lukas from Pexels</aside>
 
 I worked with Ember.js for several years, across multiple companies.
-In fact, it was the first JavaScript framework I had worked in professionally (i.e. the first time someone had _paid me money_ to write code).
+In fact, it was the first JavaScript framework I had worked in professionally.
 I am so grateful for my experience with the community and the learning curve -- I am a better developer because of the conventions it forced on me.
 But after 4+ years of writing Ember, I took another job where I won't be writing it anymore, and I have a few thoughts overall on the framework.
-
 
 # My Credentials
 
@@ -34,7 +33,7 @@ But after 4+ years of writing Ember, I took another job where I won't be writing
 
 I'm not going to claim that I'm the best Ember developer in the world but since you may not know who I am, I figured I'd at least give _some_ reasons why my opinion isn't completely without merit.
 I worked at a startup that wrote Ember and Elixir for a couple of years.
-During that time, we contracted with DockYard, who was pretty well known for Ember in the world and especially so in Boston
+During that time, we contracted with [DockYard](http://dockyard.com), who was pretty well known for Ember in the world and especially so in Boston.
 When that startup didn't last (because that's what happens at startups, unfortunately...), I actually went to DockYard.
 My time at DockYard was mostly spent in Ember (with some Rails sprinkled in for good measure), where I spent most of my time (about 2 years) contracted to work for the biggest content provider in the world.
 
@@ -50,7 +49,9 @@ So, hopefully my opinion isn't discredited immediately.
 This isn't meant to serve as a "this is why Ember is great" or "this is why Ember is bad" post (although I certainly have opinions on both).
 It's just meant to be a reflection on the framework, community, the greater web community and maybe just a bit of personal reflection.
 
-# Ember is not dead and everyone knows it
+![Ember Trophies](/media/ember.png)
+
+## Ember is not dead and everyone knows it
 
 <figure>
 	<blockquote>
@@ -72,9 +73,9 @@ But that's always been the state of Ember and it will probably be the state of i
 We, as a community, don't love Ember because we think it will be the framework to rule them all.
 It is 100% ok if Ember's market share isn't rapidly growing (although it can be worrisome when it continues to shrink).
 
-# The issues with learning Ember
+## The issues with learning Ember
 
-Ember has a reputation for having a steep learning curve and I think that was definitely true when I learned Ember(ish) years ago.
+Ember has a reputation for having a steep learning curve and I think that was definitely true when I learned Ember 4(ish) years ago.
 There wasn't a lot of documentation and the documentation we did have at the time was a bit contrived.
 
 But that's not the case any more!
@@ -86,24 +87,26 @@ I think everyone in the Ember community gets that and can make that argument, bu
 Yes, "batteries included" solves so many problems out of the box that larger applications run into.
 The problem is that newer and more junior developers don't understand those problems yet.
 They aren't worried about state management, routing, built-in testing, etc.
-So they learn React because it _is_ easy to get started and when they hit those problems, the find other people have solutions already.
+So they learn React because it _is_ easy to get started and when they hit those problems, they find other people have solutions already.
 
-You can make the argument for "batteries included" and I think people really understand that, but at the end of the day why would they switch from a React/Redux/React Router project after they invested so much time in learning it?
+You can make the argument for "batteries included" and I think people really understand that, but at the end of the day why would they switch from a React/Redux/React-Router project after they invested so much time in learning it?
+By the time developers understand the problems that Ember really solves, they are experienced enough with other JavaScript libraries to have a preference.
+Why switch?
 
-# Would I have picked Ember on my own?
+## Would I have picked Ember on my own?
 
 I don't think I would have picked Ember on my own.
 I remember during a job interview, the interviewer had asked me what brought me to Ember.
 My response was something about the community and the conventions and the same things I've heard other people say 100 times.
 The truth is: I wrote Ember because that's what my company was doing.
 And I think that's a completely valid response.
-The truth of the matter is that not everyone gets to pick their company's tech stack (in fact, _most_ of us don't).
+We can list all the reasons about the time Ember can save and the ergonomics, but not everyone gets to pick their company's tech stack (in fact, _most_ of us don't), regardless of our arguments.
 
 Obviously, I really like Ember and I would have liked a job where I could keep writing it.
 Unfortunately, that just isn't that easy because most companies just aren't writing Ember.
 React has almost become a default in the web dev community and regardless of whether you *like* it or not, the truth is that you are more employable if you know it.
 
-So, I started volunteer some time at a pre-funding startup with a mission I believed in to get some experience in React (since I wasn't going to get it at work).
+So, I started volunteering some time at a pre-funding startup with a mission I believed in to get some experience in React (since I wasn't going to get it at work).
 That's when I learned how much easier it is to get started with a library that just cares about the view layer.
 
 Secondly, I formed a lot of good habits because of Ember in terms of structuring an application, writing tests, handling how data moves through my components and more.
@@ -120,7 +123,7 @@ Things like `Component.extend({})` over `Foo extends Component`, `init` over `co
 	</blockquote>
 </figure>
 
-I get that Ember paved the way for these things and that these just weren't part of the spec when it started.
+I get that Ember helped pave the way for these things because weren't available yet.
 I also get that "stability without stagnation" means that sweeping changes can't be implemented as the goal is to not break every app out there with each release.
 But it still boils down to me not knowing something that the rest of the Web Dev world has figured out.
 Take [`broccoli.js` for example](https://github.com/broccolijs/broccoli).
@@ -138,7 +141,7 @@ My skills didn't feel transferable.
 </figure>
 
 Even if your current company writes Ember and you love your job and you never want to leave, there may come a time when that isn't the case.
-Wouldn't you want to feel like find another job quickly if you had to?
+Wouldn't you want to feel like you could find another job quickly if you had to?
 And yes, most companies won't disqualify you for not know their tech stack... but what about the ones that will?
 It would stink to miss out because you couldn't write a class properly in JavaScript or explain how to do something webpack.
 
@@ -146,7 +149,9 @@ If someone was starting out and they asked me what JS library they should start 
 There are simply more people and companies writing React out there.
 Learn what will get you a job.
 
-# Is it worth learning Ember at all?
+![Tomster and Zoe](https://emberjs.com/images/tomsters/octane-c5c0d459236649c60b715256e5b3c48c.png)
+
+## Is it worth learning Ember at all?
 
 Everything is worth learning.
 Ember will teach you how to structure an app by being opinionated.
@@ -163,7 +168,7 @@ I know how to give back to a community through open source documentation or tuto
 I feel like I mostly complained in this post, but I hope it doesn't come across that way.
 I love Ember and would be happy writing it for the rest of my career (I honestly feel this way).
 But it didn't seem like that was up to me -- I'm not in a position to make the call on what technology my company uses.
-Maybe one day I'll be in that position, but if the landscape the same as it is today, I'd probably go with React simply because so many more people know it.
-My hope is that Ember starts leaning into the conventions that the rest of the JavaScript world have adopted and that those with experience in Vue or React can jump into an Ember project and not feel lost.
+Maybe one day I'll be in that position, but if the landscape stays the same, I'd probably go with React simply because so many more people know it.
+My hope is that Ember keeps leaning into the conventions that the rest of the JavaScript world have adopted ([Ember Octane a great step](https://emberjs.com/editions/octane/)) and that those with experience in Vue or React can jump into an Ember project and not feel lost.
 
 Until then, I'll still find Ember projects when I can and contributing to the community when I have time.
