@@ -46,6 +46,17 @@ exports[`PostTemplate renders correctly 1`] = `
           Published 
           1 Sep 2016
         </p>
+        <p
+          className="meta__date"
+        >
+          Find a typo? 
+          <a
+            href="https://github.com/sbatson5/imposter-syndrome-blog/edit/master/content/posts/2016-09-01---undefined"
+            target="_blank"
+          >
+            Edit the file here!
+          </a>
+        </p>
       </div>
       <div
         className="tags"
