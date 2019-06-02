@@ -6,6 +6,7 @@ draft: false
 slug: "/posts/enouraging-ios-users-to-install/"
 category: "Engineering"
 banner: "https://i.imgur.com/XQEysi6.jpg"
+filename: "Encourage-iOS-Users-To-Install-PWA.md"
 tags:
   - "PWA"
   - "JavaScript"

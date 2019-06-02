@@ -1,11 +1,12 @@
 ---
 title: "A Few Thoughts On Ember"
-date: "2019-05-29T12:05:03.284Z"
+date: "2019-05-21T12:05:03.284Z"
 template: "post"
 draft: false
 slug: "/posts/a-few-thoughts-on-ember/"
 category: "Engineering"
 banner: "https://i.imgur.com/bM8ljia.jpg"
+filename: "Working-In-Ember.md"
 tags:
   - "Engineering"
   - "Lifestyle"

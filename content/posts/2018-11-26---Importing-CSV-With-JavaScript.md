@@ -6,6 +6,7 @@ draft: false
 slug: "/posts/importing-csv-with-javascript/"
 category: "Engineering"
 banner: "https://i.imgur.com/E38jtL8.jpg?1"
+filename: "Importing-CSV-With-JavaScript.md"
 tags:
   - "Ember"
   - "JavaScript"

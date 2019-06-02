@@ -6,6 +6,7 @@ draft: false
 slug: "/posts/why-you-should-care-about-webasembly/"
 category: "Engineering"
 banner: "https://i.imgur.com/uK49oVY.jpg"
+filename: "Intro-To-WebAssembly.md"
 tags:
   - "WebAssembly"
   - "Wasm"

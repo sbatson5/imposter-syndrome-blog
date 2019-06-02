@@ -48,6 +48,7 @@ export const query = graphql`
         tagSlugs
       }
       frontmatter {
+        filename
         banner
         date
         description
