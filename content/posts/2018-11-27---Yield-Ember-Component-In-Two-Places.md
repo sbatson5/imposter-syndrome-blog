@@ -6,6 +6,7 @@ draft: false
 slug: "/posts/yield-ember-components-in-multiple-places/"
 category: "Engineering"
 banner: "https://i.imgur.com/0cQwcjJ.jpg"
+filename: "Yield-Ember-Component-In-Two-Places.md"
 tags:
   - "Ember"
   - "JavaScript"

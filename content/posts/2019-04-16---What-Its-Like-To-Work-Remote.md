@@ -1,11 +1,12 @@
 ---
 title: "What It's Like To Work Remote"
-date: "2019-04-27T12:05:03.284Z"
+date: "2019-04-16T12:05:03.284Z"
 template: "post"
 draft: false
 slug: "/posts/what-its-like-to-work-remote/"
 category: "Engineering"
 banner: "https://imposter-syndrome.lol/media/home-office.jpg"
+filename: "What-Its-Like-To-Work-Remote.md"
 tags:
   - "Engineering"
   - "Lifestyle"

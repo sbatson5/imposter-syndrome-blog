@@ -6,6 +6,7 @@ draft: false
 slug: "/posts/drag-and-drop-on-ios-with-ember/"
 category: "Engineering"
 banner: "https://i.imgur.com/9uJli8q.jpg"
+filename: "Drag-and-Drop-In-Ember.md"
 tags:
   - "Ember"
   - "JavaScript"

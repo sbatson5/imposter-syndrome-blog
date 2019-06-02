@@ -11,7 +11,8 @@ const Post = ({ post }) => {
   const {
     tags,
     title,
-    date
+    date,
+    filename
   } = post.frontmatter;
 
   const { html } = post;
@@ -26,7 +27,7 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__footer']}>
-        <Meta date={date} />
+        <Meta date={date} filename={filename} />
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
       </div>

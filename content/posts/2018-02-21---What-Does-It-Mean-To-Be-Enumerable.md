@@ -6,6 +6,7 @@ draft: false
 slug: "/posts/what-does-it-mean-to-be-enumerable/"
 category: "Engineering"
 banner: "https://i.imgur.com/7JgR7X5.jpg"
+filename: "What-Does-It-Mean-To-Be-Enumerable.md"
 tags:
   - "Engineering"
   - "JavaScript"
