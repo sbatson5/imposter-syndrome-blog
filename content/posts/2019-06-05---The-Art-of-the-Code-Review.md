@@ -5,17 +5,23 @@ template: "post"
 draft: false
 slug: "/posts/the-art-of-the-code-review/"
 category: "Engineering"
-banner: ""
+banner: "https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg"
 filename: "The-Art-of-the-Code-Review.md"
 tags:
-  - ""
+  - "Engineering"
+  - "Lifestyle"
+  - "JavaScript"
 description: "A huge part of our careers as developers is reviewing code other people have written and responding to our own reviews. These are a few of the things I have learned so far in my career when it comes to reviewing code."
 ---
+![Laptop and notepad](https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg)
+<aside>Photo by <a href="https://www.pexels.com/@divinetechygirl" target="_blank">Christina Morillo</a></aside>
 
 If you have been an engineer/developer at a company with at least one other engineer/developer, then at some point, you have reviewed someone else's code.
 Perhaps it wasn't through a formal Pull Request (PR) or pairing session, but at some point you looked at someone else's code and commented on it (either in person or online).
 So much of our day is spent reading through other people's code and it can be so intimidating when you're starting out.
 Luckily, I have picked up a lot of tricks along the way that have not only made me better at understanding code, but have made me better at boosting the confidence of the engineers around me.
+
+Don't feel like reading all of this? [Skip to the TL;DR](#tldr)
 
 ## What is this post about?
 
@@ -145,7 +151,7 @@ When I received this comment, I panicked; mostly because I'm a sensitive person,
 I didn't want her to think I was stupid.
 
 But the truth of the matter was *I didn't use a Service because I didn't know what Services were in Ember.*
-I was still learning modern JavaScript at the time, not to mention the nuances of the framework we were using.
+I was still learning modern JavaScript at the time, not to mention the nuances of the framework.
 Even if I had 10 years of experience, there is still a chance that I just didn't know what Services did in Ember.
 
 Rather than asking something like "Why didn't you just do X" it could have been worded like this:
@@ -161,35 +167,35 @@ It is polite and points me toward something that I can look up myself.
 If the developer wanted to go the extra mile, they could link to the documentation or even offer to explain it in person.
 
 Another thing to consider is that I might have had a reason to _not_ use a Service that the developer hadn't thought of yet.
-We've all left comments on a PR asking "why do we do this?" or "can we use this?" and then have the author of the PR reply with a perfectly reasonable explanation.
+We've all left comments on a PR asking "why did we do X?" or "can we use Y?" and then have the author of the PR reply with a perfectly reasonable explanation.
 
 This happens because sometimes *you lack the full context*.
 
-### Forest for the trees
+### See the forest for the trees
 
 Sometimes, you just cannot see the forest for the trees when reviewing a PR or looking through a codebase.
 How many times have you or another dev looked at a library and said "this code sucks"?
 I see it happen constantly, but the fact of the matter is it sucks to us because *we don't get it.*
-There is context we're missing -- maybe it solves a problem we don't see, maybe it was written 5 years ago before better APIs existed, maybe it had to support IE8!
+There is typically context we're missing -- maybe it solves a problem we don't see, maybe it was written 5 years ago before better APIs existed, maybe it had to support IE8!
 
 The point is that you can't think of everything when you are reviewing a pull request in a few minutes (especially when you consider this person spent hours on it).
 So, when you are about to leave a comment, make a few assumptions.
 
-1. Assume they are just as smart, if not smarter than you
+1. Assume they are just as smart, if not smarter, than you
 1. Assume they had a good reason to do something in a way you dislike
 1. If you know for a fact, there is a better way to do something, assume that maybe they don't know about it yet
 
 These assumptions can help to frame your feedback.
 This doesn't mean you _shouldn't_ leave a comment if you think something should be improved -- we're all trying to learn together, after all.
 It just means you should shape your comment appropriately.
-Sometimes, a good thing to think is "would I say this to their face in this way?"
-If there answer is "no," odds are you're going to come across like a jerk.
+Sometimes, a good thing to think is "would I say this to their face?"
+If their answer is "no," odds are you're going to come across like a jerk.
 
 ### Compliment, don't just comment
 
 At almost every one of my annual reviews with my manager (at every job I've had as a developer), I always receive some feedback about how people enjoy getting code reviews from me.
 One of the nicest comments I got was that somebody said they always ask me for code reviews because I "made them feel smart."
-That meant a lot to me because it was something I noticed myself -- when somebody said something nice on one of my PR's, it was a huge confidence boost.
+That meant a lot to me because it was something I noticed myself -- when someone said something nice on one of my PR's, it was a huge confidence boost.
 
 That's why I started thinking in the "_Compliment, don't just comment_" mantra.
 It's pretty simple:
@@ -202,7 +208,7 @@ The last one is important to highlight and something you should consider when yo
 Along the lines of "is it necessary?" you can also ask yourself "do I just want to prove that I know this?"
 Nobody walks away from a PR where you go on about some unrelated topic thinking "wow, that person is so dang smart."
 If you're smart, people know it.
-If you're worried about being seeming smart, PR reviews are not the place to prove it.
+If you're worried about seeming smart, PR reviews are not the place to prove it.
 
 <figure>
 	<blockquote>
@@ -219,7 +225,7 @@ And we're all guilty of bike shedding from time to time (heck, sometimes it's he
 These aren't hard rules, just something to keep in mind.
 
 And remember: _there is a human being receiving this feedback_.
-If that means nothing to you, then you probably shouldn't be on a team where you need to review each other's work (and don't worry, there is plenty of work out there for you).
+If that means nothing to you, then you probably shouldn't be on a team where you need to review each other's work (and don't worry, there is plenty of work out there for you that doesn't involve code reviews).
 
 ## TL;DR
 
