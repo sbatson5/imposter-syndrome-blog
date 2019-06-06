@@ -5,7 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/the-art-of-the-code-review/"
 category: "Engineering"
-banner: "https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg"
+banner: "https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg"
 filename: "The-Art-of-the-Code-Review.md"
 tags:
   - "Engineering"
@@ -13,8 +13,8 @@ tags:
   - "JavaScript"
 description: "A huge part of our careers as developers is reviewing code other people have written and responding to our own reviews. These are a few of the things I have learned so far in my career when it comes to reviewing code."
 ---
-![Laptop and notepad](https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg)
-<aside>Photo by <a href="https://www.pexels.com/@divinetechygirl" target="_blank">Christina Morillo</a></aside>
+![Art pallet and paints](https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg)
+<aside>Photo by <a href="https://www.pexels.com/@kerber" target="_blank">Marko Blazevic</a></aside>
 
 If you have been an engineer/developer at a company with at least one other engineer/developer, then at some point, you have reviewed someone else's code.
 Perhaps it wasn't through a formal Pull Request (PR) or pairing session, but at some point you looked at someone else's code and commented on it (either in person or online).
@@ -50,7 +50,7 @@ If you haven't heard of [April Wensel](https://twitter.com/aprilwensel), please 
 She summarize this topic in a great way -- some of which I learned on my own, but a lot of it was so eye opening.
 One of the things she asks you do during a code review, is when you are leaving a comment, ask yourself "is this necessary?"
 
-### Is the comment you are leaving necessary?
+## Is the comment you are leaving necessary?
 
 Here's a simple example:
 ```JavaScript
@@ -122,7 +122,7 @@ The `filter` method is more descriptive in this case -- when we see this, we kno
 A `for` loop can do anything and at first glance, we can't tell what is going on.
 So, although both of these do the same thing, the second one *describes the intent* and I'd say that comment is worth making.
 
-### How to comment
+## How to comment
 
 The next think to think about is "how do I leave a comment?"
 
@@ -171,7 +171,11 @@ We've all left comments on a PR asking "why did we do X?" or "can we use Y?" and
 
 This happens because sometimes *you lack the full context*.
 
-### See the forest for the trees
+## See the forest for the trees
+
+![Forest](https://images.pexels.com/photos/240040/pexels-photo-240040.jpeg)
+<aside>Photo by <a href="https://www.pexels.com/@skitterphoto" target="_blank">Skitterphoto</a></aside>
+
 
 Sometimes, you just cannot see the forest for the trees when reviewing a PR or looking through a codebase.
 How many times have you or another dev looked at a library and said "this code sucks"?
@@ -191,7 +195,7 @@ It just means you should shape your comment appropriately.
 Sometimes, a good thing to think is "would I say this to their face?"
 If their answer is "no," odds are you're going to come across like a jerk.
 
-### Compliment, don't just comment
+## Compliment, don't just comment
 
 At almost every one of my annual reviews with my manager (at every job I've had as a developer), I always receive some feedback about how people enjoy getting code reviews from me.
 One of the nicest comments I got was that somebody said they always ask me for code reviews because I "made them feel smart."
