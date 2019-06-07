@@ -1,6 +1,6 @@
 ---
 title: "The Art of the Code Review"
-date: "2019-06-06T00:20:07.392Z"
+date: "2019-06-07T05:20:07.392Z"
 template: "post"
 draft: false
 slug: "/posts/the-art-of-the-code-review/"
@@ -119,6 +119,7 @@ let directors = movie.crew.filter((crew) => crew.job.includes('Director'));
 ```
 
 The `filter` method is more descriptive in this case -- when we see this, we know we're getting a subset of our `crew`.
+We understand what is going on much faster.
 A `for` loop can do anything and at first glance, we can't tell what is going on.
 So, although both of these do the same thing, the second one *describes the intent* and I'd say that comment is worth making.
 
