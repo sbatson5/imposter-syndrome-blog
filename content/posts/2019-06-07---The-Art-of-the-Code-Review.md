@@ -34,12 +34,12 @@ But I hope you still read it because I think it's important... and I want the cl
 ## What goes into a code review?
 
 <figure>
-	<blockquote>
-		<p>Bro, I know how to review code. You look for the missing semicolons and then mark it as "needs changes."</p>
+  <blockquote>
+    <p>Bro, I know how to review code. You look for the missing semicolons and then mark it as "needs changes."</p>
     <footer>
-			<cite>— Brogrammers who are all business.</cite>
-		</footer>
-	</blockquote>
+      <cite>— Brogrammers who are all business.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 First off, don't call me "bro."
@@ -84,12 +84,12 @@ The other benefit of only worrying about changes that are really necessary, is t
 In fact, if you are starting a comment with "nitpick" that might be a good sign that it isn't a comment worth making.
 
 <figure>
-	<blockquote>
-		<p>So, as long as the code works, I shouldn't comment?</p>
+  <blockquote>
+    <p>So, as long as the code works, I shouldn't comment?</p>
     <footer>
-			<cite>— People taking the point too far.</cite>
-		</footer>
-	</blockquote>
+      <cite>— People taking the point too far.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 That's definitely not what I am saying.
@@ -128,12 +128,12 @@ So, although both of these do the same thing, the second one <strong>describes t
 The next think to think about is "how do I leave a comment?"
 
 <figure>
-	<blockquote>
-		<p>Code is emotionless. Just say "update this to `x` and move on"</p>
+  <blockquote>
+    <p>Code is emotionless. Just say "update this to `x` and move on"</p>
     <footer>
-			<cite>— Programmers who are probably a <i>ton</i> of fun at parties.</cite>
-		</footer>
-	</blockquote>
+      <cite>— Programmers who are probably a <i>ton</i> of fun at parties.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 The thing I always try to remember is that there is a person at the other end receiving this feedback and I think about some of my first code reviews.
@@ -141,9 +141,9 @@ Some of the comments I had were direct shots to my confidence and when you're fi
 Here is a real example of a comment I got on my first big feature as a professional programmer:
 
 <figure>
-	<blockquote>
-		<p>Why didn't you just use a Service?</p>
-	</blockquote>
+  <blockquote>
+    <p>Why didn't you just use a Service?</p>
+  </blockquote>
 </figure>
 
 I still remember it to this day.
@@ -158,9 +158,9 @@ Even if I had 10 years of experience, there is still a chance that I just didn't
 Rather than asking something like "Why didn't you just do X" it could have been worded like this:
 
 <figure>
-	<blockquote>
-		<p>It looks like you're trying to manage state between a couple of components.  Services are specifically designed that -- are you familiar with them? You may want to look into using one here.</p>
-	</blockquote>
+  <blockquote>
+    <p>It looks like you're trying to manage state between a couple of components.  Services are specifically designed that -- are you familiar with them? You may want to look into using one here.</p>
+  </blockquote>
 </figure>
 
 It's not overly verbose.
@@ -216,12 +216,12 @@ If you're smart, people know it.
 If you're worried about seeming smart, PR reviews are not the place to prove it.
 
 <figure>
-	<blockquote>
-		<p>Don't try to convince the author that you're the smartest person in the room.  Convince them that they are.</p>
+  <blockquote>
+    <p>Don't try to convince the author that you're the smartest person in the room.  Convince them that they are.</p>
     <footer>
-			<cite>— Me, in an ideal world.</cite>
-		</footer>
-	</blockquote>
+      <cite>— Me, in an ideal world.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 It might go without saying, but it's hard to do all of this 100% of the time.
