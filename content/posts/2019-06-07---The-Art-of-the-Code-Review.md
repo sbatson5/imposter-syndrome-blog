@@ -67,7 +67,7 @@ const getAdmins = users => users.filter(user => user.isAdmin);
 ```
 One line!! And we got rid of the parenthesis!!
 But is this comment _necessary_?
-No, it isn't because the code does *exactly what it did before*.
+No, it isn't because the code does <strong>exactly what it did before</strong>.
 The thing to remember is that the single line function is not _better_ (after all, it probably gets minified anyway, so there's no difference when it ships).
 
 The hard thing to start to learn is what is the difference between your _preference_ and what is actually better.
@@ -121,7 +121,7 @@ let directors = movie.crew.filter((crew) => crew.job.includes('Director'));
 The `filter` method is more descriptive in this case -- when we see this, we know we're getting a subset of our `crew`.
 We understand what is going on much faster.
 A `for` loop can do anything and at first glance, we can't tell what is going on.
-So, although both of these do the same thing, the second one *describes the intent* and I'd say that comment is worth making.
+So, although both of these do the same thing, the second one <strong>describes the intent</strong> and I'd say that comment is worth making.
 
 ## How to comment
 
@@ -151,7 +151,7 @@ In fact, [April Wensel](https://twitter.com/aprilwensel), mentions an example ju
 When I received this comment, I panicked; mostly because I'm a sensitive person, but also because I really respected and looked up to the engineer who left this comment.
 I didn't want her to think I was stupid.
 
-But the truth of the matter was *I didn't use a Service because I didn't know what Services were in Ember.*
+But the truth of the matter was <strong>I didn't use a Service because I didn't know what Services were in Ember.</strong>
 I was still learning modern JavaScript at the time, not to mention the nuances of the framework.
 Even if I had 10 years of experience, there is still a chance that I just didn't know what Services did in Ember.
 
@@ -170,7 +170,7 @@ If the developer wanted to go the extra mile, they could link to the documentati
 Another thing to consider is that I might have had a reason to _not_ use a Service that the developer hadn't thought of yet.
 We've all left comments on a PR asking "why did we do X?" or "can we use Y?" and then have the author of the PR reply with a perfectly reasonable explanation.
 
-This happens because sometimes *you lack the full context*.
+This happens because sometimes <strong>you lack the full context</strong>.
 
 ## See the forest for the trees
 
@@ -180,7 +180,7 @@ This happens because sometimes *you lack the full context*.
 
 Sometimes, you just cannot see the forest for the trees when reviewing a PR or looking through a codebase.
 How many times have you or another dev looked at a library and said "this code sucks"?
-I see it happen constantly, but the fact of the matter is it sucks to us because *we don't get it.*
+I see it happen constantly, but the fact of the matter is it sucks to us because <strong>we don't get it.</strong>
 There is typically context we're missing -- maybe it solves a problem we don't see, maybe it was written 5 years ago before better APIs existed, maybe it had to support IE8!
 
 The point is that you can't think of everything when you are reviewing a pull request in a few minutes (especially when you consider this person spent hours on it).
@@ -206,7 +206,7 @@ That's why I started thinking in the "_Compliment, don't just comment_" mantra.
 It's pretty simple:
 
 1. Always try to find at least one nice thing to say in a PR (even if it's just "This works great!")
-1. If you learned something, *say so* ("TIL selects have a native `selectedOptions` collection")
+1. If you learned something, <strong>say so</strong> ("TIL selects have a native `selectedOptions` collection")
 1. Don't try to convince the author you're smart
 
 The last one is important to highlight and something you should consider when you're writing out a comment.
