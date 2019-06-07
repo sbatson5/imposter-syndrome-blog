@@ -8,7 +8,7 @@ Boston, MA.
 I have worked on projects for small startups, enterprise corporations and everywhere in between.
 
 I have extensive experience in most modern front-end frameworks (React, Vue and Ember).
-I have experience in back-end technologies such Ruby on Rails, Elixir Phoenix, PHP and more.
+I have experience in back-end technologies such as Ruby on Rails, Elixir Phoenix, PHP and more.
 
 ## Contact Me
 
