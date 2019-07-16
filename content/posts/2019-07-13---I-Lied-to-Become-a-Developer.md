@@ -71,14 +71,10 @@ These were focused classes to teach you a specific skill -- at the end of it all
 
 The act of applying for jobs was pretty deflating.
 To be fair, I had it better than most because I at least had a job at the time that I didn't hate.
-I wasn't making a developer's salary, but I was kept the lights on.
+I wasn't making a developer's salary, but I kept the lights on.
 I really feel for the people who had to quit their jobs to attend a bootcamp and go into debt to complete it.
 That's one of the really nice things about community colleges: the classes weren't that expensive.
-I could pay for each course as I signed up for them -- when I finished my certificate, everything was already paid off.
-And if money was tight for me during a certain term, I could take time off or sign up for one less class.
-
-The point I want to make clear is that although I was applying for a lot of jobs, I had something to fallback on.
-Yes, it stank to get turned down constantly, but I had the luxury of time.
+I paid for each course as I took them and if money was tight, I could take a term off.
 
 Applying to jobs usually went like this:
 <figure>
@@ -103,7 +99,8 @@ I remember I had to talk through (no code, no using google) how I would write a 
 In a language that 👏 I 👏 didn't 👏 know!
 I forget how I got through it, but one of the guys on the call sighed and rolled his eyes so cartoonishly, I thought they'd roll away.
 He said "won't that create a bunch of extra strings in memory?"
-🤷‍♀️ Yeah, probably!
+
+Yeah... probably...
 
 <figure>
   <blockquote>
