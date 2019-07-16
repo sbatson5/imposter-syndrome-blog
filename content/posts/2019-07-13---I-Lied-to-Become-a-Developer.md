@@ -5,12 +5,17 @@ template: "post"
 draft: false
 slug: "/posts/i-lied-to-become-a-developer/"
 category: "Engineering"
-banner: ""
+banner: "https://imgur.com/2csz4Op.jpg"
 filename: "I-Lied-to-Become-a-Developer.md"
 tags:
-  - ""
+  - "Engineering"
+  - "Lifestyle"
+  - "Career"
 description: "Getting started in tech can be really daunting, especially when you don't have a typical background. So, I told a couple fibs to get my foot in the door."
 ---
+
+![Lion lying](https://imgur.com/2csz4Op.jpg)
+<aside>Photo by <a href="https://unsplash.com/@wade_lambert">Wade Lambert on Unsplash</a></aside>
 
 If you work in tech, you probably know how hard it can be to get a job sometimes.
 Your first job is by far the most difficult to land (especially if you want a half-way decent one).
@@ -26,13 +31,10 @@ Sometimes I joke that the reason I eventually became a dev was so that I could p
 I graduated in 2008, which was *the worst year to graduate* since the great depression.
 There were no jobs whatsoever and the only work I found was a temp job at my mom's company (thanks, mom).
 
-I bounced between a few jobs, worked at Best Buy for a while and eventually ended up for working in Tech Support for a software company.
+I bounced between a few jobs, worked at Best Buy for a while and eventually ended up working in Tech Support for a software company.
 This is where I first got exposed to web development.
 The company had software that allowed you to create surveys and questionnaires that could be published to web, mobile and paper.
 The web surveys allowed you to insert custom HTML and sometimes customers wanted to do really weird things.
-We had a customer who wanted to create an NCAA bracket-style tournament system.
-You might be wondering why they couldn't just sign up for something on ESPN, but their internal network was heavily locked down and there were only a hand full of sites they could hit while in the office.
-One of those sites was where our software published web surveys.
 
 Long-story short, I got into some custom JavaScript (mostly jQuery) and playing around with query parameters to pass information between sessions.
 It worked and I thought "people do this for a living?!"
@@ -73,15 +75,15 @@ I could pay for each course as I signed up for them -- when I finished my certif
 And if money was tight for me during a certain term, I could take time off or sign up for one less class.
 
 The point I want to make clear is that although I was applying for a lot of jobs, I had something to fallback on.
-Yes, it was deflating to get turned down constantly for developer jobs, but I had the luxury of time.
+Yes, it stank to get turned down constantly, but I had the luxury of time.
 
-So, applying to jobs usually went like this.
+Applying to jobs usually went like this:
 <figure>
 	<blockquote class="support-small">
 		<p class="left-align small-text">We have a great intro level job!</p>
 		<p class="left-align small-text">Oh sorry, you don't have enough experience.</p>
 		<p class="left-align small-text">You should probably apply to an intro level job...</p>
-		<p class="left-align small-text">Maybe once you have a job, you can apply this job that you don't need anymore for some reason.</p>
+		<p class="left-align small-text">Maybe once you have a job, you can apply to this job that you don't need anymore.</p>
     <footer>
 			<cite>— Recruiters named cool things like "Chet" or "Bront".</cite>
 		</footer>
@@ -96,7 +98,7 @@ This was a language I knew almost nothing about and the position was "Front End 
 
 I remember I had to talk through (no code, no using google) how I would write a function that would check to see if a string is a palindrome.
 In a language that 👏 I 👏 didn't 👏 know!
-I forget how I got through it, but one of the guys on the call sighed and rolled his eyes at me.
+I forget how I got through it, but one of the guys on the call sighed and rolled his eyes so cartoonishly, I thought they'd roll away.
 He said "won't that create a bunch of extra strings in memory?"
 🤷‍♀️ Yeah, probably!
 
@@ -110,7 +112,8 @@ He said "won't that create a bunch of extra strings in memory?"
 </figure>
 
 So, I got to the point where I really just thought it wasn't going to happen.
-I didn't feel bad -- I enjoyed it and maybe I could work on some cool side projects in the mean time and it could help me get my next job because I can put "HTML" on my resume.
+It had been over a year of applying and I couldn't get past level one.
+I didn't feel bad -- I enjoyed it and maybe I could work on some cool side projects.
 
 As fate would have it though, I came across a really interesting job posting.
 
@@ -121,10 +124,11 @@ The technology description said they were writing Ember and Node but it was ok i
 They actually said *in the job posting* that they would teach you!
 
 But I'd done this dance before and I knew all the steps.
+These skills aren't "required" ... we'll take someone without this experience if _literally nobody else applies._
 So, I thought I'd mix it up a little bit and pad the ol' resume.
-Ember? Sure, I know the embers.
-Node? Node problem.
-Git? Gitchu that job, son!
+ - Ember? Sure, I know the embers.
+ - Node? Node problem.
+ - Git? Gitchu that job, son!
 
 #### Side note:
 I had no idea what git was or how version control worked.  
@@ -164,7 +168,7 @@ I managed to throw together a pretty awful portfolio with some code examples.
 You bet I pushed that up to GitHub years later: https://github.com/sbatson5/Portfolio
 
 Somehow, that was sufficient and they sent me a take home test 😱!
-The email said "it should take a couple of hours."
+The email said "it should only take a couple of hours."
 ... It took me 6 ...
 
 But I learned a lot!
@@ -177,6 +181,9 @@ developer.hasNoClueWhatTheyAreDoing
 ```
 
 ...I literally left a comment pointing out said ternary...
+
+#### Side note, return of the side project:
+I managed to find this in my emails and now it is up for your viewing pleasure: https://github.com/sbatson5/my-first-every-take-home-coding-challenge
 
 *And yet!*
 Somehow, I got an *in person* interview!
@@ -202,8 +209,8 @@ Clearly, they didn't get to know me well enough because they eventually offered 
 And the rest is history.
 Ember, Elixir, Open Source, 1,000 YouTube Subscribers, Engineering lead at Netflix, and so on.
 All because I padded the resume...
-I don't do that _now_, obviously since I have the experience.
-And obviously, I don't advocate for this at all.
+I don't do that _now_, obviously, since I have the experience.
+And I certainly won't advocate for this at all.
 Maybe I would have been interviewed at this place any way and it was just the right place at the right time.
 Maybe that extra couple of sentences got my foot in the door, and that was really all I needed.
 Who knows?

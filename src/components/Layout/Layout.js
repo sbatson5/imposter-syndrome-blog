@@ -17,6 +17,7 @@ const Layout = ({
       {image ? <meta property="og:image" content={image} /> : ''}
       <meta property="og:type" content="blog" />
     </Helmet>
+    <base target="_blank" />
     {children}
   </div>
 );

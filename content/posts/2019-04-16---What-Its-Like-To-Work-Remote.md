@@ -14,7 +14,7 @@ description: "I worked remotely for two and a half years. There were a few thing
 ---
 
 ![Home Office](/media/home-office.jpg)
-<aside>Photo by Piotr Wilk on Unsplash</aside>
+<aside>Photo by <a href="https://unsplash.com/@teddygraphics">Piotr Wilk on Unsplash</a></aside>
 
 If you work in the tech industry, you have no doubt wondered about working remotely.
 I can't even count the number of tweets and blog posts I've come across that talk about how working remote is not only a perk, but the inevitable future for engineers.
