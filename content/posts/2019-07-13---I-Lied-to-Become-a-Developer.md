@@ -28,7 +28,7 @@ In fact, I had to lie to get my first job...
 
 I went to the University of Maine where I majored in English (hold your laughs, please).
 Sometimes I joke that the reason I eventually became a dev was so that I could program a time-machine, go back and make everything right...
-I graduated in 2008, which was <strong>the worst year to graduate</strong> since the great depression.
+I graduated in 2008, which was [the worst year to graduate](https://www.vox.com/2014/7/9/5881131/what-happened-to-the-class-of-2008-in-charts) since the great depression.
 There were no jobs whatsoever and the only work I found was a temp job at my mom's company (thanks, mom).
 
 I bounced between a few jobs, worked at Best Buy for a while and eventually ended up working in Tech Support for a software company.
@@ -38,6 +38,9 @@ The web surveys allowed you to insert custom HTML and sometimes customers wanted
 
 Long-story short, I got into some custom JavaScript (mostly jQuery) and playing around with query parameters to pass information between sessions.
 It worked and I thought "people do this for a living?!"
+
+![Chalkboard with "Learning Schooling" written](https://images.pexels.com/photos/54597/leave-board-hand-learn-54597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+<aside>Photo by <a href="https://www.pexels.com/@pixabay">Pixabay on Pexels</a></aside>
 
 ## How did I actually learn how to code?
 
@@ -116,6 +119,8 @@ It had been over a year of applying and I couldn't get past level one.
 I didn't feel bad -- I enjoyed it and maybe I could work on some cool side projects.
 
 As fate would have it though, I came across a really interesting job posting.
+
+![Society of Grownups Banner](https://www.societyofgrownups.com/assets/images/bg-homepage-hero.jpg)
 
 ## Society of Grownups
 
