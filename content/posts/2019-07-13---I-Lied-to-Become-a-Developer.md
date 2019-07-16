@@ -28,7 +28,7 @@ In fact, I had to lie to get my first job...
 
 I went to the University of Maine where I majored in English (hold your laughs, please).
 Sometimes I joke that the reason I eventually became a dev was so that I could program a time-machine, go back and make everything right...
-I graduated in 2008, which was *the worst year to graduate* since the great depression.
+I graduated in 2008, which was <strong>the worst year to graduate</strong> since the great depression.
 There were no jobs whatsoever and the only work I found was a temp job at my mom's company (thanks, mom).
 
 I bounced between a few jobs, worked at Best Buy for a while and eventually ended up working in Tech Support for a software company.
@@ -141,11 +141,11 @@ And it was "internal" to my computer...
 
 #### Another side note:
 Years later, I would push that code to GitHub for laughs.  
-You can check it out: https://github.com/sbatson5/SnapPHP ...
+You can [check it out in all it's PHP glory](https://github.com/sbatson5/SnapPHP).
 It features great file names such as `test1.php` and `newtest1`.
 
 I sent the application off, slightly chuckling and certain I would never hear back.
-But fate is funny like that and it turns out companies *actually want people with experience*.
+But fate is funny like that and it turns out companies <strong>actually want people with experience</strong>.
 The only problem was, I didn't actually have the experience advertised.
 But I'm a man of positivity... and what did I have to lose?
 
@@ -165,7 +165,7 @@ I had been playing around with Angular in my free time, since I read it was the 
 I managed to throw together a pretty awful portfolio with some code examples.
 
 #### Side note part 3:
-You bet I pushed that up to GitHub years later: https://github.com/sbatson5/Portfolio
+You bet I pushed that up to GitHub years later: [Portfolio](https://github.com/sbatson5/Portfolio)
 
 Somehow, that was sufficient and they sent me a take home test 😱!
 The email said "it should only take a couple of hours."
@@ -183,10 +183,10 @@ developer.hasNoClueWhatTheyAreDoing
 ...I literally [left a comment pointing out said ternary](https://github.com/sbatson5/my-first-every-take-home-coding-challenge/blob/master/films.js#L54)...
 
 #### Side note, return of the side project:
-I managed to find this in my emails and now it is up for your viewing pleasure: https://github.com/sbatson5/my-first-every-take-home-coding-challenge
+I managed to find this in my emails and now [it is up for your viewing pleasure](https://github.com/sbatson5/my-first-every-take-home-coding-challenge)
 
-*And yet!*
-Somehow, I got an *in person* interview!
+<strong>And yet!</strong>
+Somehow, I got an <strong>in person</strong> interview!
 I was ridiculously nervous.
 It was in a part of Boston I'd never been to (Brookline? That can't be real).
 So, as a person from Maine, I naturally assumed it was 3 hours away and left early to give myself "extra time."
