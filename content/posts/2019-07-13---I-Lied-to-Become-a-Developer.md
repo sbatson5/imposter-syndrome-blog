@@ -56,12 +56,12 @@ Which made sense -- this wasn't a comprehensive degree program.
 These were focused classes to teach you a specific skill -- at the end of it all, I received a "certificate" and not a degree.
 
 <figure>
-	<blockquote>
-		<p>How the heck do I get paid to do this?</p>
+  <blockquote>
+    <p>How the heck do I get paid to do this?</p>
     <footer>
-			<cite>— Me, thinking I knew all the programming.</cite>
-		</footer>
-	</blockquote>
+      <cite>— Me, thinking I knew all the programming.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 ## Applying for jobs
@@ -79,15 +79,15 @@ Yes, it stank to get turned down constantly, but I had the luxury of time.
 
 Applying to jobs usually went like this:
 <figure>
-	<blockquote class="support-small">
-		<p class="left-align small-text">We have a great intro level job!</p>
-		<p class="left-align small-text">Oh sorry, you don't have enough experience.</p>
-		<p class="left-align small-text">You should probably apply to an intro level job...</p>
-		<p class="left-align small-text">Maybe once you have a job, you can apply to this job that you don't need anymore.</p>
+  <blockquote class="support-small">
+    <p class="left-align small-text">We have a great intro level job!</p>
+    <p class="left-align small-text">Oh sorry, you don't have enough experience.</p>
+    <p class="left-align small-text">You should probably apply to an intro level job...</p>
+    <p class="left-align small-text">Maybe once you have a job, you can apply to this job that you don't need anymore.</p>
     <footer>
-			<cite>— Recruiters named cool things like "Chet" or "Bront".</cite>
-		</footer>
-	</blockquote>
+      <cite>— Recruiters named cool things like "Chet" or "Bront".</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 I could not get my foot in the door anywhere.
@@ -103,12 +103,12 @@ He said "won't that create a bunch of extra strings in memory?"
 🤷‍♀️ Yeah, probably!
 
 <figure>
-	<blockquote>
-		<p>Bro, I want to make websites, not string reversers.</p>
+  <blockquote>
+    <p>Bro, I want to make websites, not string reversers.</p>
     <footer>
-			<cite>— My internal monologue.</cite>
-		</footer>
-	</blockquote>
+      <cite>— My internal monologue.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 So, I got to the point where I really just thought it wasn't going to happen.
@@ -152,12 +152,12 @@ But I'm a man of positivity... and what did I have to lose?
 They sent me a follow-up email asking for my portfolio.
 
 <figure>
-	<blockquote>
-		<p>Like... a physical portfolio? Do I mail it to them?</p>
+  <blockquote>
+    <p>Like... a physical portfolio? Do I mail it to them?</p>
     <footer>
-			<cite>— Me, buying manilla folders.</cite>
-		</footer>
-	</blockquote>
+      <cite>— Me, buying manilla folders.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 I scrambled to put something together.
@@ -193,12 +193,12 @@ So, as a person from Maine, I naturally assumed it was 3 hours away and left ear
 It was an hour... and I had so much time, I walked around the neighborhood and got ridiculously sweaty and oops, forgot it was only 2 hour parking.
 
 <figure>
-	<blockquote>
-		<p>Thirty Dollars?! For a parking ticket?!</p>
+  <blockquote>
+    <p>Thirty Dollars?! For a parking ticket?!</p>
     <footer>
-			<cite>— Me, thinking that was expensive.</cite>
-		</footer>
-	</blockquote>
+      <cite>— Me, thinking that was expensive.</cite>
+    </footer>
+  </blockquote>
 </figure>
 
 Anyways.
