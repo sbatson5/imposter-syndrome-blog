@@ -180,7 +180,7 @@ developer.hasNoClueWhatTheyAreDoing
   : 'If conditions probably read better...';
 ```
 
-...I literally left a comment pointing out said ternary...
+...I literally [left a comment pointing out said ternary](https://github.com/sbatson5/my-first-every-take-home-coding-challenge/blob/master/films.js#L54)...
 
 #### Side note, return of the side project:
 I managed to find this in my emails and now it is up for your viewing pleasure: https://github.com/sbatson5/my-first-every-take-home-coding-challenge
