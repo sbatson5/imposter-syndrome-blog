@@ -27,7 +27,6 @@ In fact, I had to lie to get my first job...
 ## My journey to becoming a developer
 
 I went to the University of Maine where I majored in English (hold your laughs, please).
-Sometimes I joke that the reason I eventually became a dev was so that I could program a time-machine, go back and make everything right...
 I graduated in 2008, which was [the worst year to graduate](https://www.vox.com/2014/7/9/5881131/what-happened-to-the-class-of-2008-in-charts) since the great depression.
 There were no jobs whatsoever and the only work I found was a temp job at my mom's company (thanks, mom).
 
@@ -53,7 +52,7 @@ I'd say that has been one of the most useful courses I have ever taken because i
 Sure, Postgres is a bit different than the MySQL I was writing, but the core knowledge behind writing a query has come in handy more times than I can count.
 
 After that, I was taking courses in PHP, JavaScript, basic web development, and some C#.
-I was learning so much but there was still something missing from my curriculum.
+I felt I was learning so much about programming in general, but there was still something missing from my curriculum.
 Although these classes taught me some fundamentals, I never learned anything about how to get a job or what companies were looking for.
 Which made sense -- this wasn't a comprehensive degree program.
 These were focused classes to teach you a specific skill -- at the end of it all, I received a "certificate" and not a degree.
@@ -113,7 +112,8 @@ Yeah... probably...
 
 So, I got to the point where I really just thought it wasn't going to happen.
 It had been over a year of applying and I couldn't get past level one.
-I didn't feel bad -- I enjoyed it and maybe I could work on some cool side projects.
+I started to accept that it just wouldn't happen.
+At least I enjoyed learning and maybe I could work on some cool side projects.
 
 As fate would have it though, I came across a really interesting job posting.
 
