@@ -5,7 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/i-lied-to-become-a-developer/"
 category: "Engineering"
-banner: "https://imgur.com/2csz4Op.jpg"
+banner: "https://i.imgur.com/myEstbjh.jpg"
 filename: "I-Lied-to-Become-a-Developer.md"
 tags:
   - "Engineering"
@@ -14,7 +14,7 @@ tags:
 description: "Getting started in tech can be really daunting, especially when you don't have a typical background. So, I told a couple fibs to get my foot in the door."
 ---
 
-![Lion lying](https://imgur.com/2csz4Op.jpg)
+![Lion lying](https://i.imgur.com/myEstbjh.jpg)
 <aside>Photo by <a href="https://unsplash.com/@wade_lambert">Wade Lambert on Unsplash</a></aside>
 
 If you work in tech, you probably know how hard it can be to get a job sometimes.
