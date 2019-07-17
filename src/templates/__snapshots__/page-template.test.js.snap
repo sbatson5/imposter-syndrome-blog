@@ -4,6 +4,9 @@ exports[`PageTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
+  <base
+    target="_blank"
+  />
   <StaticQuery
     render={[Function]}
   />

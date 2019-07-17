@@ -14,7 +14,7 @@ tags:
 description: "A huge part of our careers as developers is reviewing code other people have written and responding to our own reviews. These are a few of the things I have learned so far in my career when it comes to reviewing code."
 ---
 ![Art pallet and paints](https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg)
-<aside>Photo by <a href="https://www.pexels.com/@kerber" target="_blank">Marko Blazevic</a></aside>
+<aside>Photo by <a href="https://www.pexels.com/@kerber">Marko Blazevic</a></aside>
 
 If you have been an engineer/developer at a company with at least one other engineer/developer, then at some point, you have reviewed someone else's code.
 Perhaps it wasn't through a formal Pull Request (PR) or pairing session, but at some point you looked at someone else's code and commented on it (either in person or online).

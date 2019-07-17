@@ -7,3 +7,10 @@
 blockquote .left-align {
   text-align: left;
 }
+
+blockquote.support-small .small-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 20px;
+}
