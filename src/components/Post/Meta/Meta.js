@@ -3,7 +3,7 @@ import moment from 'moment';
 import styles from './Meta.module.scss';
 
 const Meta = ({ date, filename }) => {
-  if (!document.querySelector('#twitter-embed-widget-formatter')) {
+  if (typeof document !== 'undefined' && !document.querySelector('#twitter-embed-widget-formatter')) {
     let twitterJS = document.createElement('script');
     twitterJS.id = 'twitter-embed-widget-formatter';
     twitterJS.type = 'text/javascript';
