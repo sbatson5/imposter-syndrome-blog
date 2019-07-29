@@ -9,8 +9,13 @@ banner: ""
 filename: "Why-meetings-are-important-sometimes.md"
 tags:
   - "Engineering"
+  - "Lifestyle"
+  - "Career"
 description: "Every developer complains about meetings -- but painting with broad strokes of 'meetings are useless' can be toxic. There are some things you should ask yourself before going into a meeting."
 ---
+
+![Lion lying](https://i.imgur.com/5T7dLNf.jpg)
+<aside>Photo by <a href="https://www.pexels.com/@rawpixel">Rawpixel on Pexels</a></aside>
 
 For as long as I've been a developer, I've heard people complain about how useless meetings are.
 There seems to be such an averse reaction to seeing a chunk of time on your calendar taken up by a vague meeting like "Talk about v2 rollout" or "Weekly tech sync."
@@ -24,7 +29,7 @@ This blog post was inspired by this ridiculous twitter thread that has been goin
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">10x engineers<br><br>Founders if you ever come across this rare breed of engineers, grab them. If you have a 10x engineer as part of your first few engineers, you increase the odds of your startup success significantly.<br><br>OK, here is a tough question.<br><br>How do you spot a 10x engineer?</p>&mdash; Shekhar Kirani (@skirani) <a href="https://twitter.com/skirani/status/1149302828420067328?ref_src=twsrc%5Etfw">July 11, 2019</a></blockquote>
 
-There are a lot of #HotTakes on this on twitter, so I'm not going to dissect my thoughts on the myth of 10x engineers.
+There are a lot of [#HotTakes](https://twitter.com/search?q=10X%20engineer) about this on twitter, so I'm not going to dissect my thoughts on the myth of 10x engineers.
 A lot of people who are a lot smarter than me have spoken at length about this.
 Instead, I just want to focus on a couple of points made in the thread about how you can "spot a 10x engineer":
 
@@ -88,8 +93,8 @@ It's most likely _not_ a sign that everyone just has a bad attitude.
 Rather than forcing everyone to "suck it up" and attend, start to think about how you can make it less cumbersome.
 
 From an engineering perspective, ask yourself whether every engineer needs to attend.
-To my above point that "the meeting isn't for you": if stakeholders need to understand some of the engineering difficulty or talk through technology choices, odds are that only one engineer needs to attend.
-A lot of times business make the mistake of including everyone -- and I understand why that happens.
+To my above point that "the meeting isn't for you": if stakeholders need to understand some of the engineering difficulties or talk through technology choices, odds are that only one engineer needs to attend. 
+A lot of times businesses make the mistake of including everyone -- and I understand why that happens.
 After all, you don't want some people to feel like they aren't being represented.
 
 If you are on a team with multiple engineers, try having a short chat about who needs to attend a meeting.
@@ -108,7 +113,7 @@ If people are sitting on their laptops coding, then they aren't engaged in that 
 Most likely, they were invited "just in case a question pops up."
 Well, if a question pops up, send them a slack message... or just ask them later.
 If you have three people in a meeting, typing away on their laptops, not only are you wasting everyone's time, but you are coming across as very unprofessional.
-It's not a good look to have a bunch of people in a client meeting who are not engaged.
+It's not a good look to have a bunch of people in a client meeting who are not paying attention.
 Having two people who are actively participating in a meeting is much more meaningful than six people who aren't even talking or looking at each other.
 
 ## Some meetings just don't need to happen
@@ -127,12 +132,12 @@ The key is to <strong>not be a jerk about it.</strong>
 ## TL;DR
 
 I'm gonna try my best to summarize all my points:
-1. If everyone complains about there being too many meetings -- there are probably too many meetings
+1. If everyone complains that there are too many meetings -- there are probably too many meetings
 1. If you think meetings take away from your work... du'h. But some of them still need to happen
-1. Meetings aren't usually for you -- you were asked to be there to explain something up the chain that might seem obvious to you
+1. Meetings aren't usually for you -- you were asked to be there to explain something up the chain that might seem obvious to you (it's not obvious to everyone)
 1. Get over the idea that great engineers hate meetings -- you're just buying into a stereotype
 1. A lot of the time, only one engineer actually needs to attend a meeting. Try rotating through who attends meetings and be ok with the fact that your voice isn't the one being heard
-1. If you feel a meeting doesn't need to happen, just ask.  And be ok with the fact that someone feels like it does (again, it's not about you)
+1. If you feel a meeting doesn't need to happen, just ask.  And be ok with the fact that someone might feel like it does (again, it's not about you)
 
 There's no such thing as a 10x engineer and if someone thinks they are above meetings, that's just a sign that they don't understand the connection between their work and the business.
 It's not a sign that their time is just that much more valuable.
