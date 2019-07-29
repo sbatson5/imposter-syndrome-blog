@@ -14,7 +14,7 @@ tags:
 description: "Every developer complains about meetings -- but painting with broad strokes of 'meetings are useless' can be toxic. There are some things you should ask yourself before going into a meeting."
 ---
 
-![Lion lying](https://i.imgur.com/5T7dLNf.jpg)
+![Hands together in a meeting](https://i.imgur.com/5T7dLNf.jpg)
 <aside>Photo by <a href="https://www.pexels.com/@rawpixel">Rawpixel on Pexels</a></aside>
 
 For as long as I've been a developer, I've heard people complain about how useless meetings are.
