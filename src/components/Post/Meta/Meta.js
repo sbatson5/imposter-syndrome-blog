@@ -3,6 +3,16 @@ import moment from 'moment';
 import styles from './Meta.module.scss';
 
 const Meta = ({ date, filename }) => {
+  if (typeof document !== 'undefined' && !document.querySelector('#twitter-embed-widget-formatter')) {
+    let twitterJS = document.createElement('script');
+    twitterJS.id = 'twitter-embed-widget-formatter';
+    twitterJS.type = 'text/javascript';
+    twitterJS.src = 'https://platform.twitter.com/widgets.js';
+    twitterJS.charset = 'utf-8';
+    twitterJS.async = true;
+    document.head.appendChild(twitterJS);
+  }
+
   let fileNameDate = moment(date).format('YYYY-MM-DD');
 
   let markdownName = `${fileNameDate}---${filename}`;
