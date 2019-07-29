@@ -5,7 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/why-meetings-are-important-sometimes/"
 category: "Engineering"
-banner: ""
+banner: "https://i.imgur.com/5T7dLNf.jpg"
 filename: "Why-meetings-are-important-sometimes.md"
 tags:
   - "Engineering"
