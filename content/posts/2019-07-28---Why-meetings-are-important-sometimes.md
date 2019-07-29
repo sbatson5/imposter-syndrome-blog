@@ -1,6 +1,6 @@
 ---
 title: "Why meetings are important sometimes"
-date: "2019-07-21T13:58:56.596Z"
+date: "2019-07-28T13:58:56.596Z"
 template: "post"
 draft: false
 slug: "/posts/why-meetings-are-important-sometimes/"
@@ -57,8 +57,11 @@ Thinking through complex software problems takes a lot of mental bandwidth and i
 That's a big reason why we hate meetings.
 An hour long meeting usually means losing out on 2 hours of productivity and people (not just developers) hate feeling like they aren't productive.
 
-However, meetings can be a necessary evil and the daunting feeling of "I have too many meetings" can be a sign of a different problem.
-Here are some things to consider before going on a rant about how useless all the meetings are or some things you can try to clean up the slew of meetings that are eating away at your time.
+However, a lot of meetings are necessary and the daunting feeling of "I have too many meetings" can actually be a sign of a different problem.
+Here are some things to consider before going on a rant about how useless all the meetings are or some things you can try to help clean up the slew of meetings that are eating away at your time.
+
+![Dog curled in blanket](https://i.imgur.com/6lAwUdz.jpg)
+<aside>Photo by <a href="https://www.pexels.com/@burst">Burst on Pexels</a></aside>
 
 ## Meetings aren't usually for you
 
@@ -106,15 +109,25 @@ You can cut down on so much "wasted time" by just cutting down on who is attendi
 The hard part is knowing which meetings qualify for this and which don't.
 One thing to look out for:
 
-#### Are people coding during the meeting?
+<figure>
+  <blockquote>
+    <p>I'm just going to bring my laptop, work through this meeting and hope no one asks me anything...</p>
+    <footer>
+      <cite>— People who should just be at their desk.</cite>
+    </footer>
+  </blockquote>
+</figure>
 
-This happens a lot (I do it all the time).
-If people are sitting on their laptops coding, then they aren't engaged in that meeting anyway.
+This happens a lot (I'm guilty of it).
+If people are coding on their laptops, then they aren't engaged in that meeting anyway.
 Most likely, they were invited "just in case a question pops up."
 Well, if a question pops up, send them a slack message... or just ask them later.
-If you have three people in a meeting, typing away on their laptops, not only are you wasting everyone's time, but you are coming across as very unprofessional.
+If you have three people in a meeting, typing away on their laptops, not only are you wasting everyone's time, but you are coming across as unprofessional.
 It's not a good look to have a bunch of people in a client meeting who are not paying attention.
 Having two people who are actively participating in a meeting is much more meaningful than six people who aren't even talking or looking at each other.
+
+![Dog with glasses - heckin' ready for meeting](https://i.imgur.com/exeViku.jpg)
+<aside>Photo by <a href="https://unsplash.com/@jamie452">Jamie Street on Unsplash</a></aside>
 
 ## Some meetings just don't need to happen
 
