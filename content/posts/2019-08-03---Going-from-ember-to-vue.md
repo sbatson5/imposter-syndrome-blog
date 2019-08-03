@@ -5,7 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/going-from-ember-to-vue/"
 category: "Engineering"
-banner: ""
+banner: "https://miro.medium.com/max/3840/1*nfvapd86apvGH-hNBYkYuw.png"
 filename: "Going-from-ember-to-vue.md"
 tags:
   - "Engineering"
@@ -15,6 +15,8 @@ tags:
   - "Web Development"
 description: "Thinking of looking into another framework other than Ember? React might seem like the obvious choice due to popularity, but consider taking a look at Vue first!"
 ---
+
+![Vue.js logo](https://miro.medium.com/max/3840/1*nfvapd86apvGH-hNBYkYuw.png)
 
 If you know me, you know that I love Ember and have worked with it (and the community) for several years.
 But recently, I took another job where I won't be writing it anymore [(I wrote a whole post about this if you're interested)](/posts/a-few-thoughts-on-ember/).
@@ -35,6 +37,9 @@ There is literally nothing special about this component -- it can be literally a
 In my opinion, this is a good habit to get into as it will help you transition to something like React down the line if you have to.
 
 ## Batteries aren't included
+
+![Batteries](https://i.imgur.com/65SKMnM.jpg?1)
+<aside>Photo by <a href="https://www.pexels.com/@hilaryh">Hilary Halliwell on Pexels</a></aside>
 
 This isn't meant to be a knock on Vue, but it doesn't come with as much stuff out of the box as Ember.
 In fact, this is probably a huge plus.
@@ -75,6 +80,8 @@ You are also much more explicit when updating your "store" and that makes it fee
 No, there's no identity mapping or convenient CRUD methods, but that also means you get to be more flexible with how you request data (and as a result, you'll probably be much more aware of what is going on in your application).
 
 # Similarities
+
+![Spider-Man pointing to Spider-Man](https://i.kym-cdn.com/entries/icons/mobile/000/023/397/C-658VsXoAo3ovC.jpg)
 
 Ok, let's talk about the similarities (which is really the point of this post).
 
@@ -186,7 +193,10 @@ fullName() {
 
 Computed properties have the same issues in Vue as Ember, in that it won't observe nested keys more than one level deep and it has some issues with observing arrays.
 
-## Routing
+## The Router
+
+![A Router](https://i.imgur.com/xlUWWN7.jpg?1)
+<aside>Photo by <a href="https://www.pexels.com/@rawpixel">Rawpixel on Pexels</a></aside>
 
 The router in Vue feels like a good mix between react-router and the Ember Router.
 Let's just look at a full example of a router in Vue:
@@ -195,13 +205,8 @@ Let's just look at a full example of a router in Vue:
 import Vue from 'vue';
 import Router from 'vue-router';
 import { auth } from 'utils';
-import store from 'store';
 
-import {
-  NotFound,
-  Dashboard,
-  Login,
-} from 'routes';
+import { NotFound, Dashboard, Login } from 'routes';
 
 Vue.use(Router);
 
@@ -210,16 +215,16 @@ const router = new Router({
   routes: [
     {
       path: '*',
-      component: NotFound,
+      component: NotFound
     },
     {
       path: '/dashboard',
       name: 'Dashboard',
       meta: {
         layout: 'sidebar',
-        requiresAuth: true,
+        requiresAuth: true
       },
-      component: Dashboard,
+      component: Dashboard
     },
     {
       path: '/login',
@@ -236,9 +241,9 @@ const router = new Router({
             next();
           }
         }
-      },
-    },
-  ],
+      }
+    }
+  ]
 });
 
 router.beforeEach(async (to, from, next) => {
@@ -253,7 +258,7 @@ router.beforeEach(async (to, from, next) => {
     } else {
       next({
         name: 'Login',
-        params: { redirected: true }, // indicate they are redirected
+        params: { redirected: true } // indicate they are redirected
       });
     }
   } else {
