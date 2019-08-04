@@ -44,16 +44,20 @@ In my opinion, this is a good habit to get into as it will help you transition t
 This isn't meant to be a knock on Vue, but it doesn't come with as much stuff out of the box as Ember.
 In fact, this is probably a huge plus.
 [Vue CLI](https://cli.vuejs.org/) allows you to generate a project quickly, but much like Create React App, you are getting a pretty simple UI application with webpack pre-configured for you.
-And yes, webpack over Brocolli is another big difference... but it's probably a good one.
+And yes, webpack over Brocolli is another big difference... but it's probably a good one (noted disclaimer that [ember-embroider](https://github.com/embroider-build/embroider) is helping the community move towards webpack).
 
 However, anything you want to do in ember, probably already has an equivalent library in Vue.
 And most of these libraries are maintained by core team members, so they feel very official.
 With just a couple more `vue add` commands, you can get routing and state management in your app, so it's really not a _huge_ knock against Vue.
+Unlike React, however, these are officially supported addons, developed my many core team members.
+In fact, both [Vuex](https://vuex.vuejs.org/) and [Vue Router](https://router.vuejs.org/) are subdomains of the official Vue website.
+So, even though they are addons, they are treated as first-class citizens.
 
 ## Components are one file
 
 I found this weird at first, but boy, do I like components with both markup and JavaScript in the same file.
 I hated having to bounce between files so often in Ember (especially when the community wanted to move away from pod structure).
+Disclaimer: there is [currently an rfc that could help move toward single-file components](https://github.com/emberjs/rfcs/pull/454).
 
 <figure>
   <blockquote>
@@ -71,13 +75,19 @@ The JavaScript of a component is too tightly tied to the markup (as it should be
 ## State management
 
 The popular state management solution seems to be [Vuex](https://vuex.vuejs.org/) (another "official" Vue library written by core team members).
-This is much closer to [Redux](https://redux.js.org/) or [NGRX](https://ngrx.io/).
-I'm not going to claim that these patterns are the end-all-be-all solutions for state management on the front-end, but it's where most of the community seems to be going right now.
-Which is a huge plus over Ember.
-The skills/practices you pick up writing Vuex will translate to these other libraries.
+This is much closer to [Redux](https://redux.js.org/) or [NGRX](https://ngrx.io/) -- if you're familiar with those libraries, you'll be able to jump right into Vuex.
+I'm not going to claim that these libraries are the end-all-be-all solutions for state management on the front-end, but it's where most of the community seems to be going right now.
+Which I feel is a huge plus over Ember, since the skills/practices you pick up writing Vuex will translate over to React/Redux or something similar.
 
 You are also much more explicit when updating your "store" and that makes it feel so much less magical than Ember Data.
-No, there's no identity mapping or convenient CRUD methods, but that also means you get to be more flexible with how you request data (and as a result, you'll probably be much more aware of what is going on in your application).
+In Ember data, when I call `post.save()`, it isn't immediately clear what is happening (especially as a new developer).
+It makes a `POST` request if the record is new, a `PUT` request if it is not, updates the record in our store, looks for the id being returned from the API for updates, updates our store record, etc.
+Which isn't to say that stuff is bad, but when I was first getting into Ember, I found it confusing (same with `findAll` versus `peekAll`).
+
+So no, there's no identity mapping or convenient CRUD methods, but that also means you get to be more flexible with how you request data.
+Want to use `fetch` out of the box? Go for it!
+Want to use `member-actions` or GraphQL? There's no crazy workaround here.
+As a result, you'll probably be much more aware of what is going on in your application.
 
 # Similarities
 
@@ -146,14 +156,17 @@ I just wanted some examples of the major key pieces.
 First off, all of the markup is wrapped in a `template`.
 After that, you are writing normal HTML.
 You call other components just like `<AngleBracket />` components in Ember, but the differences (for now) is that you have to import them.
-This saves from potential name collision, as an npm package might have a component with the same name as one of yours.
-You could do `import SomeCustomComponent as Monkey from '@something/components';` and rename a component without any magic.
+This saves you from potential name collision, as an npm package might have a component with the same name yours.
+You could do `import SomeCustomComponent as Monkey from '@something/components';` and rename a component easily.
+Again, this is something in an RFC for Ember already but it cements a point I made in an earlier post that [the resolver is a bit too clever sometimes](/posts/a-few-thoughts-on-ember/#3-make-the-resolver-less-clever).
 
 ## Methods/Actions
 
-When calling a component, we have similar patterns as Ember.
-You need to append a `:` to properties you pass down to a component and `@` for events that map to functions (think `actions`).
+When using a component, we have similar patterns as Ember.
+You need to append a `:` to properties you pass down to a component.
+So, if my parent component has a property called `author` and I want to pass `author.name` down to a child component as `fullname`, it would look like this: `<AuthorInfo :fullname="author.name" />`.
 `methods` are the equivalent of `actions` in Ember -- if there is a function that is going to be called from the template, it is in the `methods` hash.
+Functions can live outside of that hash (obviously) but this tells you what you expect to interact with your markup.
 
 If you look at the `someMethod` function, you will see the last line calls `this.emit('something-that-bubbles');`.
 This is how we accomplish something similar to "Data Down, Actions Up" (DDAU).
@@ -162,10 +175,16 @@ This means that child component does not need to receive an action as a paramete
 All it does is emit something, pass any properties along with it and then it stops caring.
 It's up to the parent component to listen to it and respond.
 
-One of the things I disliked with the actions helper in Ember was when the child component could call `this.passedAction()` and I would get an error that it wasn't a function because I forgot to pass it down, the child component stopped working.
-With emitting, the child component can continue to function.
-To be clear: making API calls to your backend should happen through the Vuex store -- mutating applicaton state should not be done with `emit`.
-However, if you have buttons component that toggles something on and off, this is a good case for using `emit` as the parent component is most likely the only thing that cares about the event.
+One of the things I disliked with the actions helper in Ember was that a child component might not always want to bubble something up.
+Say you had a component like this in Ember: `<AuthorInfo @updateProfile={{action "updateProfile"}} />`.
+We pass down an action called `updateProfile` which allows the logged in user to update their profile.
+However, I want to use that same layout elsewhere when viewing a post, but it isn't editable.
+So, I simply don't pass down that action: `<AuthorInfo />`.
+If the user triggers that action, however, I will get an error like `this.updateProfile is not a function` (or something similar).
+So, you wrap stuff in if conditions to make sure that's not the case.
+
+With emitting, the child component won't hit this error, as all it does is emit something out and it's up to the parent to intercept it.
+Calling `this.emit('update-profile')` won't cause an error if parent component doesn't have a method for updating that profile.
 
 ## Computed Properties
 
@@ -270,10 +289,13 @@ export default router;
 ```
 
 Much like react-router, we specify the route name and point it to a component that we have imported (here, we store them in a `routes/index.js` file, but they could live anywhere).
+The provided hooks (which are called [navigation guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)) can be asynchronous and hold transitions until a promise has resolved.
+
 We can specify a path, just like in Ember but we can also attach additional information in any format we want.
 This becomes really handy for when you want to mark some pages as public and some that need authentication.
 In Ember, you would do that in the `route.js` file for a particular route/path but in Vue, you handle it all here.
-This can be really nice because it allows us to either write one large `beforEach` function, like you see at the bottom of the file or you can write those functions individually for every route (like you see for the `login` route).
+The route files in Ember are optional of course, but you still need to address the problem of adding blanket rules to routes (like `ember-simple-auth`'s `AuthenticatedRouteMixin`).
+Having everything addressed in one file can be really nice because it allows us to either write one large `beforEach` function, like you see at the bottom of the file or you can write those functions individually for every route (like you see for the `login` route).
 
 So, the pattern is very similar to routes in Ember, but you are keeping your logic in one file rather than spread across a ton of different route object files that may or may not extend from one another.
 
