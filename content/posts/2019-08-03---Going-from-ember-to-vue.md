@@ -27,12 +27,17 @@ For the past few months though, I have been working on a Vue project and I have 
 So, I was going to take some time and write about the similarities and differences I have experienced.
 Even if you still love Ember and plan on working with it for a while, I would encourage you to look at Vue just to see what else is out there.
 
+## What's the point of this post?
+
+I mostly want to focus on what similarities exist to encourage those writing Ember to try taking a look at Vue.
+Obviously, there are too many differences to list, so I just want to talk about some major points.
+
 # Some big differences
 
 Much like React, Vue is a component library -- which means you'll be using components for <strong>everything.</strong>
 That means no controllers or route objects.
 When you create a route, you are pointing to a component.
-There is literally nothing special about this component -- it can be literally any component that you want (in fact, you can use it both as a route _and_ component on the page... although, you really shouldn't).
+There is literally nothing special about this component -- it can be any component that you want (in fact, you can use it both as a route _and_ component on the page... although, you really shouldn't).
 
 In my opinion, this is a good habit to get into as it will help you transition to something like React down the line if you have to.
 
@@ -42,16 +47,13 @@ In my opinion, this is a good habit to get into as it will help you transition t
 <aside>Photo by <a href="https://www.pexels.com/@hilaryh">Hilary Halliwell on Pexels</a></aside>
 
 This isn't meant to be a knock on Vue, but it doesn't come with as much stuff out of the box as Ember.
-In fact, this is probably a huge plus.
 [Vue CLI](https://cli.vuejs.org/) allows you to generate a project quickly, but much like Create React App, you are getting a pretty simple UI application with webpack pre-configured for you.
-And yes, webpack over Brocolli is another big difference... but it's probably a good one (noted disclaimer that [ember-embroider](https://github.com/embroider-build/embroider) is helping the community move towards webpack).
+And yes, webpack over brocolli is another big difference... but it's probably a good one (noted disclaimer that [ember-embroider](https://github.com/embroider-build/embroider) is helping the community move towards webpack).
 
 However, anything you want to do in ember, probably already has an equivalent library in Vue.
-And most of these libraries are maintained by core team members, so they feel very official.
+And most of these libraries are maintained by core team members, so they feel very official (unlike the React ecosystem).
 With just a couple more `vue add` commands, you can get routing and state management in your app, so it's really not a _huge_ knock against Vue.
-Unlike React, however, these are officially supported addons, developed my many core team members.
-In fact, both [Vuex](https://vuex.vuejs.org/) and [Vue Router](https://router.vuejs.org/) are subdomains of the official Vue website.
-So, even though they are addons, they are treated as first-class citizens.
+In fact, both [Vuex](https://vuex.vuejs.org/) and [Vue Router](https://router.vuejs.org/) are subdomains of the official Vue website -- showing developers that these are real considerations by the core team.
 
 ## Components are one file
 
@@ -76,18 +78,9 @@ The JavaScript of a component is too tightly tied to the markup (as it should be
 
 The popular state management solution seems to be [Vuex](https://vuex.vuejs.org/) (another "official" Vue library written by core team members).
 This is much closer to [Redux](https://redux.js.org/) or [NGRX](https://ngrx.io/) -- if you're familiar with those libraries, you'll be able to jump right into Vuex.
-I'm not going to claim that these libraries are the end-all-be-all solutions for state management on the front-end, but it's where most of the community seems to be going right now.
-Which I feel is a huge plus over Ember, since the skills/practices you pick up writing Vuex will translate over to React/Redux or something similar.
-
-You are also much more explicit when updating your "store" and that makes it feel so much less magical than Ember Data.
-In Ember data, when I call `post.save()`, it isn't immediately clear what is happening (especially as a new developer).
-It makes a `POST` request if the record is new, a `PUT` request if it is not, updates the record in our store, looks for the id being returned from the API for updates, updates our store record, etc.
-Which isn't to say that stuff is bad, but when I was first getting into Ember, I found it confusing (same with `findAll` versus `peekAll`).
-
-So no, there's no identity mapping or convenient CRUD methods, but that also means you get to be more flexible with how you request data.
-Want to use `fetch` out of the box? Go for it!
-Want to use `member-actions` or GraphQL? There's no crazy workaround here.
-As a result, you'll probably be much more aware of what is going on in your application.
+As I [learned from the reviews on this post](https://github.com/sbatson5/imposter-syndrome-blog/pull/14), there are way too many differences to list here as [Ember data](https://github.com/emberjs/data) and Vuex are two very different approaches.
+I will say that if you learn Vuex, you'll be able to jump into Redux without issue, which I consider a huge plus.
+You might find the learning curve steep here if you have only used Ember data, but it's definitely worth checking out other solutions.
 
 # Similarities
 
@@ -165,23 +158,26 @@ Again, this is something in an RFC for Ember already but it cements a point I ma
 When using a component, we have similar patterns as Ember.
 You need to append a `:` to properties you pass down to a component.
 So, if my parent component has a property called `author` and I want to pass `author.name` down to a child component as `fullname`, it would look like this: `<AuthorInfo :fullname="author.name" />`.
+Compared to `<AuthorInfo @fullname={{this.author.name}} />` in Ember, you can see the syntax isn't hard to learn.
+
 `methods` are the equivalent of `actions` in Ember -- if there is a function that is going to be called from the template, it is in the `methods` hash.
 Functions can live outside of that hash (obviously) but this tells you what you expect to interact with your markup.
+In Ember, you can call functions on your component by _not_ using the `action` helper, but Vue forces this convention on you, separating your template functions.
 
 If you look at the `someMethod` function, you will see the last line calls `this.emit('something-that-bubbles');`.
 This is how we accomplish something similar to "Data Down, Actions Up" (DDAU).
 It's a bit different and shouldn't be used for every case, but basically, when we `emit` something, any parent component can listen to that event (in this case `something-that-bubbles`) and respond to it.
-This means that child component does not need to receive an action as a parameter.
+This means that the child component does not need to receive an action as a parameter.
 All it does is emit something, pass any properties along with it and then it stops caring.
 It's up to the parent component to listen to it and respond.
 
-One of the things I disliked with the actions helper in Ember was that a child component might not always want to bubble something up.
+One of the things I disliked with the actions helper in Ember was that I might not always pass an action down for every instance of my component.
 Say you had a component like this in Ember: `<AuthorInfo @updateProfile={{action "updateProfile"}} />`.
 We pass down an action called `updateProfile` which allows the logged in user to update their profile.
 However, I want to use that same layout elsewhere when viewing a post, but it isn't editable.
 So, I simply don't pass down that action: `<AuthorInfo />`.
 If the user triggers that action, however, I will get an error like `this.updateProfile is not a function` (or something similar).
-So, you wrap stuff in if conditions to make sure that's not the case.
+Obviously, you can conditionally call this and handle this use case in a lot of different ways, but I feel like it sometimes makes a child component too aware of its parent.
 
 With emitting, the child component won't hit this error, as all it does is emit something out and it's up to the parent to intercept it.
 Calling `this.emit('update-profile')` won't cause an error if parent component doesn't have a method for updating that profile.
@@ -210,7 +206,7 @@ fullName() {
 }
 ```
 
-Computed properties have the same issues in Vue as Ember, in that it won't observe nested keys more than one level deep and it has some issues with observing arrays.
+Computed properties have the same issues in Vue as Ember, in that it won't observe nested arrays -- instead, you'd usually create an intermediary computed property.
 
 ## The Router
 
@@ -290,14 +286,12 @@ export default router;
 
 Much like react-router, we specify the route name and point it to a component that we have imported (here, we store them in a `routes/index.js` file, but they could live anywhere).
 The provided hooks (which are called [navigation guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)) can be asynchronous and hold transitions until a promise has resolved.
+And we get [route splitting out of the box](https://vuejs.org/v2/guide/components-dynamic-async.html#Async-Components).
 
 We can specify a path, just like in Ember but we can also attach additional information in any format we want.
 This becomes really handy for when you want to mark some pages as public and some that need authentication.
-In Ember, you would do that in the `route.js` file for a particular route/path but in Vue, you handle it all here.
-The route files in Ember are optional of course, but you still need to address the problem of adding blanket rules to routes (like `ember-simple-auth`'s `AuthenticatedRouteMixin`).
-Having everything addressed in one file can be really nice because it allows us to either write one large `beforEach` function, like you see at the bottom of the file or you can write those functions individually for every route (like you see for the `login` route).
-
-So, the pattern is very similar to routes in Ember, but you are keeping your logic in one file rather than spread across a ton of different route object files that may or may not extend from one another.
+Ember has something similar with `routeDidChange` but if you want to handle everything in a particular route's lifecycle (i.e. `willTransition`, `didTransition`, `beforeModel`, etc.), you'd handle that in an optional `route.js` file.
+So, we can do all the same things, with similar approaches, they just happen in different spots.
 
 # Conclusion
 
