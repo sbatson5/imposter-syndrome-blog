@@ -12,7 +12,7 @@ tags:
   - "Vue"
   - "JavaScript"
   - "Web Development"
-description: "DESCRIPTION HERE"
+description: "Do you want your app users to have a seamless experience? In this post we show how to implement a “retry last action” feature in Vuex that allows failed API calls to be retried without disrupting the user."
 ---
 
 ![Action Clapper](https://miro.medium.com/max/10796/0*E0IPtZKFPm_LVbfM)
