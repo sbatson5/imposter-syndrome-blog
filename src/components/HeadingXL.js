@@ -11,7 +11,7 @@ export const HeadingXL = styled.h1`
     hsl(240, 100%, 70%)
   );
   display: block;
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: -4px;
   line-height: 1.2;
   margin: 0 auto 10vh auto;

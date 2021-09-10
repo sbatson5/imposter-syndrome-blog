@@ -43,6 +43,8 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          'gatsby-remark-embed-video',
+          'gatsby-remark-prismjs',
         ],
       },
     },

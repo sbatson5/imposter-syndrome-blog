@@ -9,8 +9,9 @@ import {
   SEO,
   TextBody,
   TextDate,
-} from "../components"
-import {BREAKPOINT} from "../utils/constants"
+} from "../components";
+import {BREAKPOINT} from "../utils/constants";
+import 'prismjs/themes/prism-tomorrow.css';
 
 const Hero = styled.div`
   margin-bottom: 20vh;
@@ -51,17 +52,16 @@ export default function Home({data}) {
       <HeaderLogo />
       <Layout>
         <Hero>
-          <HeadingXL>Lewis Gatsby Starter Blog</HeadingXL>
+          <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
           <TextHome>
-            This is a custom Gatsby starter template to start a new blog or
-            personal website.
+            I&rsquo;m a software engineer and writer but am not particular good at either.
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (
           <Link to={node.fields.slug} key={node.id}>
             <Post>
               <HeadingL>{node.frontmatter.title}</HeadingL>
-              <TextBody>{node.excerpt}</TextBody>
+              <TextBody>{node.frontmatter.description}</TextBody>
               <TextDate>{node.frontmatter.date}</TextDate>
             </Post>
           </Link>
@@ -80,6 +80,7 @@ export const data = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            description
           }
           fields {
             slug

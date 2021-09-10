@@ -71,6 +71,25 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  blockquote {
+    font-style: italic;
+    margin: 0;
+    padding: 0 40px;
+    margin-top: 40px;
+    border-left: 2px solid;
+    border-color: gray;
+  }
+
+  blockquote p {
+    font-weight: 600;
+  }
+
+  aside {
+    color: #888;
+    font-size: 80%;
+    font-style: italic;
+  }
+
   /* Remove list styles on ul, ol elements with a class attribute */
   ul[class],
   ol[class] {
@@ -82,10 +101,16 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration-skip-ink: auto;
   }
 
+  /* A elements that don't have a class get default styles */
+  .blog-post a:not([class]) {
+    text-decoration: underline;
+  }
+
   /* Make images easier to work with */
   img {
     display: block;
     max-width: 100%;
+    margin: auto;
   }
 
   /* Natural flow and rhythm in articles by default */

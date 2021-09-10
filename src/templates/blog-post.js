@@ -18,6 +18,7 @@ export default function BlogPost({data}) {
         <HeadingXL>{data.markdownRemark.frontmatter.title}</HeadingXL>
         <TextDate>{data.markdownRemark.frontmatter.date}</TextDate>
         <TextBody
+          className="blog-post"
           dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}
         />
       </Layout>
