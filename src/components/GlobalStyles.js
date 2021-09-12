@@ -106,11 +106,29 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
   }
 
+  .blog-post img {
+     margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .TextBody-DPQTQ::selection, 
+  .TextBody-DPQTQ p::selection, 
+  .TextBody-DPQTQ a:not([class])::selection, 
+  .TextBody-DPQTQ h2::selection,
+  .TextBody-DPQTQ li::selection {
+    background: hsl(240,100%,70%);
+    color: #fff;
+  }
+
+  .embedVideo-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
   /* Make images easier to work with */
   img {
     display: block;
     max-width: 100%;
-    margin: auto;
   }
 
   /* Natural flow and rhythm in articles by default */

@@ -45,20 +45,29 @@ const Post = styled.div`
   }
 `
 
+const textAboutMe = [
+  'I\'m a software engineer and writer but am not particularly good at either',
+  'I\'m just a boy, standing in front of a blank screen, asking it to love him',
+  'I\'m my mother\'s favorite Scott.  ...Well, favorite after Scott Bakula',
+  'If you like tech and writing and reading about tech and writing then... you\'re probably me...'
+];
+
+const randomNumber = Math.floor(Math.random() * textAboutMe.length);
+
 export default function Home({data}) {
   return (
     <>
-      <SEO title="Blog" />
+      <SEO title="Home" />
       <HeaderLogo />
       <Layout>
         <Hero>
           <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
           <TextHome>
-            I&rsquo;m a software engineer and writer but am not particular good at either.
+            {textAboutMe[randomNumber]}
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (
-          <Link to={node.fields.slug} key={node.id}>
+          <Link to={node.frontmatter.slug} key={node.id}>
             <Post>
               <HeadingL>{node.frontmatter.title}</HeadingL>
               <TextBody>{node.frontmatter.description}</TextBody>
@@ -81,8 +90,6 @@ export const data = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             description
-          }
-          fields {
             slug
           }
           excerpt

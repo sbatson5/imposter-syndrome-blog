@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Lewis Gatsby Starter Blog`,
+    title: `Imposter Syndrome LOL`,
     description: `A custom Gatsby starter template to start a blog or personal website.`,
     siteUrl: `https://lewis-gatsby-starter-blog.netlify.com`,
   },

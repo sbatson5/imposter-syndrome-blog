@@ -21,9 +21,11 @@ export function HeaderLogo() {
   return (
     <HeaderWrapper>
       <Logo>IS.lol</Logo>
-      <Link to="/about">
-        <p>About</p>
-      </Link>
+      <div>
+        <Link to="/about">
+          <p>About</p>
+        </Link>
+      </div>
     </HeaderWrapper>
   )
 }

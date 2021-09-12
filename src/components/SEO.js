@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import {useStaticQuery, graphql} from "gatsby"
-import {GatsbyIcon} from "../assets/icons"
+import {ISLOL} from "../assets/icons"
 
 export function SEO({title}) {
   const data = useStaticQuery(
@@ -48,7 +48,7 @@ export function SEO({title}) {
           content: `summary`,
         },
       ]}
-      link={[{rel: "icon", type: "image/png", href: `${GatsbyIcon}`}]}
+      link={[{rel: "icon", type: "image/png", href: `${ISLOL}`}]}
     />
   )
 }

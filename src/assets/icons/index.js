@@ -1,4 +1,5 @@
-import ArrowBack from "./ArrowBack.svg"
-import GatsbyIcon from "./GatsbyIcon.png"
+import ArrowBack from './ArrowBack.svg';
+import GatsbyIcon from './GatsbyIcon.png';
+import ISLOL from './is-lol.png';
 
-export {ArrowBack, GatsbyIcon}
+export { ArrowBack, GatsbyIcon, ISLOL };

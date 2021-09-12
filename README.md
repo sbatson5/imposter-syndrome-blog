@@ -1,5 +1,5 @@
 <h1 align="center">
-  Lewis Gatsby Starter Blog
+    Imposter Syndrome LOL
 </h1>
 
 <br>

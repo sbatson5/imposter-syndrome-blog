@@ -1,5 +1,5 @@
-import React from "react"
-import {graphql} from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 import {
   Button,
   HeaderBack,
@@ -8,7 +8,7 @@ import {
   Layout,
   SEO,
   TextBody,
-} from "../components"
+} from '../components'
 
 export default function About({data}) {
   return (
@@ -16,24 +16,30 @@ export default function About({data}) {
       <SEO title="About" />
       <HeaderBack />
       <Layout>
-        <HeadingXL>About</HeadingXL>
+        <HeadingXL>About Me</HeadingXL>
         <Image fluid={data.RandomPhoto.childImageSharp.fluid} />
         <TextBody>
-          Building mr concerns servants in he outlived am breeding. He so lain
-          good miss when sell some at if. Told hand so an rich gave next. How
-          doubt yet again see son smart. While mirth large of on front. Ye he
-          greater related adapted proceed entered an. Through it examine express
-          promise no. Past add size game cold girl off how old.
+          What is there to say about me?
           <br />
           <br />
-          Bringing so sociable felicity supplied mr. September suspicion far him
-          two acuteness perfectly. Covered as an examine so regular of. Ye
-          astonished friendship remarkably no. Window admire matter praise you
-          bed whence. Delivered ye sportsmen zealously arranging frankness
-          estimable as. Nay any article enabled musical shyness yet sixteen yet
-          blushes. Entire its the did figure wonder off.
+          I majored in English (haha) and graduated from college in 2008... literally, the worst
+          year to graduate in the past 100 years. Surprising no one, I wasn&lsquo;t able to find a job
+          right after college. I worked as a bank teller, sales associate at Best Buy before
+          landing a job in Tech Support at a software company. I stayed there for 4 years and
+          slowly learned more about software development. I took night classes at my local
+          community college for 3 years before landing my first job as a web developer.
+          <br />
+          <br />
+          Although I built a career in tech, my passion for reading and writing never went away.
+          I love reading fantasy and sci-fi novels and am currently working on a few writing
+          projects. My most recent short story (The Shtriga) was published in 
+          <Link href="https://www.amazon.com/dp/B093RP1C7G">Issue 78 of Leading Edge Magazine</Link>
+          <br />
+          <br />
+          I am available for freelance work, but find that I can&lsquo;t commit to more than 10 hours
+          a week. So if I am already on a contract, I may not have the capacity to take on more work.
         </TextBody>
-        <Button href="mailto:your&#64;email.com">Get in touch</Button>
+        <Button href="mailto:scott.batson&#64;imposter-syndrome.lol">Get in touch</Button>
       </Layout>
     </>
   )
