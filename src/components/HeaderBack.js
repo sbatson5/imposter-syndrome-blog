@@ -6,21 +6,21 @@ import {BREAKPOINT} from "../utils/constants"
 import {ArrowBack} from "../assets/icons"
 
 const Icon = styled.img`
-  height: 34px;
+  height: 20px;
   max-width: 100%;
   max-height: 100%;
-  width: 34px;
+  width: 20px;
 
   @media (max-width: ${BREAKPOINT}px) {
-    height: 28px;
-    width: 28px;
+    height: 15px;
+    width: 15px;
   }
 `
 
 export function HeaderBack() {
   return (
     <FixedBar>
-      <Link to="/">
+      <Link className="arrow-link" to="/">
         <Icon src={ArrowBack} alt="Back" />
       </Link>
     </FixedBar>

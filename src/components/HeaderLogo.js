@@ -20,7 +20,7 @@ const Logo = styled.p`
 export function HeaderLogo() {
   return (
     <HeaderWrapper>
-      <Logo>IS.lol</Logo>
+      <Logo>I-S.lol</Logo>
       <div>
         <Link to="/about">
           <p>About</p>

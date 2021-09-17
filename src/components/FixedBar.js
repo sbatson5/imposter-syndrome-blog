@@ -7,7 +7,7 @@ export const FixedBar = styled.header`
   background-color: var(--light-color-translucent);
   display: flex;
   flex-direction: row;
-  height: 8vh;
+  height: 11vh;
   left: auto;
   padding: 0 var(--sides-padding-desktop);
   position: fixed;
@@ -18,5 +18,6 @@ export const FixedBar = styled.header`
 
   @media (max-width: ${BREAKPOINT}px) {
     padding: 0 var(--sides-padding-mobile);
+    height: 10vh;
   }
 `

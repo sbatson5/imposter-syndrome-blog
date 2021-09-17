@@ -16,6 +16,22 @@ export const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-display: block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url('${font.InterRegular}') format("woff2");
+  }
+
+  @font-face {
+    font-display: block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url('${font.InterBold}') format("woff2");
+  }
+
+  @font-face {
+    font-display: block;
     font-family: "IBMPlexMono";
     font-style: normal;
     font-weight: 400;
@@ -33,14 +49,13 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--light-color);
     color: var(--dark-color);
-    font-family: 'IBMPlexMono', sans-serif;
-    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
     font-weight: 400;
     height: 100%;
     padding-top: 20vh;
 
   @media (max-width: ${BREAKPOINT}px) {
-      font-size: 17px;
       padding-top: 15vh;
     }
   }
@@ -50,6 +65,11 @@ export const GlobalStyles = createGlobalStyle`
     color: inherit;
     -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
     -webkit-tap-highlight-color: transparent;
+  }
+
+  h2 {
+    font-size: 2em;
+    letter-spacing: -1px;
   }
 
   /* CSS Reset */
@@ -129,6 +149,16 @@ export const GlobalStyles = createGlobalStyle`
   img {
     display: block;
     max-width: 100%;
+  }
+
+  .arrow-link {
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 50%;
+
+    @media (max-width: ${BREAKPOINT}px) {
+      padding: 15px;
+    }
   }
 
   /* Natural flow and rhythm in articles by default */
