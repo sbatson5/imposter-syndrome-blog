@@ -168,6 +168,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .arrow-link {
+    height: 80px;
+    width: 80px;
     padding: 20px;
     border: 2px black solid;
     border-radius: 50%;

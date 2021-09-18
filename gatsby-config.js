@@ -5,6 +5,13 @@ module.exports = {
     siteUrl: `https://lewis-gatsby-starter-blog.netlify.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-141208714-1",
+        head: true
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
