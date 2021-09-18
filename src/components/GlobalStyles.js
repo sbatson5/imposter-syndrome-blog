@@ -60,6 +60,22 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .cursor {
+    pointer-events: none;
+  }
+
+  .cursor__ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+
+    circle {
+      fill: hsl(240,100%,70%, 0.8);
+    }
+}
+
   div a {
     text-decoration: none;
     color: inherit;

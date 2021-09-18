@@ -10,8 +10,10 @@ import {
   TextBody,
   TextDate,
 } from "../components";
-import {BREAKPOINT} from "../utils/constants";
+import { BREAKPOINT } from "../utils/constants";
+import setupCursor from "../utils/setup-cursor";
 import 'prismjs/themes/prism-tomorrow.css';
+import { useEffect } from "react";
 
 const Hero = styled.div`
   margin-bottom: 20vh;
@@ -55,20 +57,31 @@ const textAboutMe = [
 const randomNumber = Math.floor(Math.random() * textAboutMe.length);
 
 export default function Home({data}) {
+  useEffect(() => {
+    setupCursor();
+  }, []);
+
   return (
     <>
+      <div className="cursor">
+        <div className="cursor__ball js-cursor">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" strokeWidth="0"></circle>
+          </svg>
+        </div>
+      </div>
       <SEO title="Home" />
       <HeaderLogo />
       <Layout>
         <Hero>
           <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
           <TextHome>
-            {textAboutMe[randomNumber]}
+            hi
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (
           <Link to={node.frontmatter.slug} key={node.id}>
-            <Post>
+            <Post className="js-cursor-target">
               <HeadingL>{node.frontmatter.title}</HeadingL>
               <TextBody>{node.frontmatter.description}</TextBody>
               <TextDate>{node.frontmatter.date}</TextDate>
