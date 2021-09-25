@@ -36,11 +36,11 @@ function setupCursor() {
   }
 
   if (cursor && hoverables) {
-    for (let i = 0; i < hoverables.length; i++) {
-      hoverables[i].addEventListener('mousemove', onMouseMove);
-      hoverables[i].addEventListener('mouseenter', onMouseHover);
-      hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
-    }
+    hoverables.forEach((hov) => {
+      hov.addEventListener('mousemove', onMouseMove);
+      hov.addEventListener('mouseenter', onMouseHover);
+      hov.addEventListener('mouseleave', onMouseHoverOut);
+    });
   }
 }
 

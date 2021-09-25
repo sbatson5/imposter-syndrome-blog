@@ -1,6 +1,6 @@
-import React from "react"
-import {Link, graphql} from "gatsby"
-import styled from "styled-components"
+import React from 'react';
+import {Link, graphql} from 'gatsby';
+import styled from 'styled-components';
 import {
   HeaderLogo,
   HeadingXL,
@@ -9,11 +9,11 @@ import {
   SEO,
   TextBody,
   TextDate,
-} from "../components";
-import { BREAKPOINT } from "../utils/constants";
-import setupCursor from "../utils/setup-cursor";
+} from '../components';
+import { BREAKPOINT } from '../utils/constants';
+import setupCursor from '../utils/setup-cursor';
 import 'prismjs/themes/prism-tomorrow.css';
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 const Hero = styled.div`
   margin-bottom: 20vh;
@@ -76,7 +76,7 @@ export default function Home({data}) {
         <Hero>
           <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
           <TextHome>
-            hi
+            {textAboutMe[randomNumber]}
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (

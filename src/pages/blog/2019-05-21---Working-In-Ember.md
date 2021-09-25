@@ -50,7 +50,7 @@ So, hopefully my opinion isn't discredited immediately.
 This isn't meant to serve as a "this is why Ember is great" or "this is why Ember is bad" post (although I certainly have opinions on both).
 It's just meant to be a reflection on the framework, community, the greater web community and hopes for where Ember will go in the future.
 
-![Ember Trophies](/media/ember.png)
+![Ember Trophies](../../assets/images/ember.png)
 
 ## Ember is not dead and everyone knows it
 

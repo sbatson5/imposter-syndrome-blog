@@ -147,10 +147,12 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 50px;
   }
 
+  h1::selection,
+  p::selection,
+  h2::selection,
   .TextBody-DPQTQ::selection, 
   .TextBody-DPQTQ p::selection, 
   .TextBody-DPQTQ a:not([class])::selection, 
-  .TextBody-DPQTQ h2::selection,
   .TextBody-DPQTQ li::selection {
     background: hsl(240,100%,70%);
     color: #fff;

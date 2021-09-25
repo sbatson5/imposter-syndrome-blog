@@ -5,7 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/what-its-like-to-work-remote/"
 category: "Engineering"
-banner: "https://imposter-syndrome.lol/media/home-office.jpg"
+banner: "https://imposter-syndrome.lol/assets/images/home-office.jpg"
 filename: "What-Its-Like-To-Work-Remote.md"
 tags:
   - "Engineering"
@@ -13,7 +13,7 @@ tags:
 description: "I worked remotely for two and a half years. There were a few things I liked and a few things I didn't.  What is it really like to work from home full time?"
 ---
 
-![Home Office](/media/home-office.jpg)
+![Home Office](../../assets/images/home-office.jpg)
 <aside>Photo by <a href="https://unsplash.com/@teddygraphics">Piotr Wilk on Unsplash</a></aside>
 
 If you work in the tech industry, you have no doubt wondered about working remotely.
@@ -85,7 +85,7 @@ Being able to wake up, make breakfast and walk ten feet to your office is an ama
 
 # Why go back to an office?
 
-![Upstatement Office](/media/upstatement-office.jpg)
+![Upstatement Office](../../assets/images/upstatement-office.jpg)
 <aside>My actual office</aside>
 
 One of the common things I would hear from people who had never worked from home was:
@@ -188,5 +188,5 @@ I just wish someone had reassured me when I was feeling isolated in my home offi
 </figure>
 
 And even if you really enjoy it right now, it's ok if you change your mind later.
-It's hard to tell what type of affect it can have on people, as most workers haven't been doing it for more than a few years.
+It's hard to tell what type of effect it can have on people, as most workers haven't been doing it for more than a few years.
 So, be sure to check in on yourself from time to time and really ask yourself if something is missing.
