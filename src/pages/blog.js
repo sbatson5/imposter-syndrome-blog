@@ -47,15 +47,6 @@ const Post = styled.div`
   }
 `
 
-const textAboutMe = [
-  'I\'m a software engineer and writer but am not particularly good at either',
-  'I\'m just a boy, standing in front of a blank screen, asking it to love him',
-  'I\'m my mother\'s favorite Scott.  ...Well, favorite after Scott Bakula',
-  'If you like tech and writing and reading about tech and writing then... you\'re probably me...'
-];
-
-const randomNumber = Math.floor(Math.random() * textAboutMe.length);
-
 export default function Home({data}) {
   useEffect(() => {
     setupCursor();
@@ -75,9 +66,7 @@ export default function Home({data}) {
       <Layout>
         <Hero>
           <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
-          <TextHome>
-            {textAboutMe[randomNumber]}
-          </TextHome>
+          <TextHome>Tech Blog</TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (
           <Link to={node.frontmatter.slug} key={node.id}>
@@ -95,7 +84,7 @@ export default function Home({data}) {
 
 export const data = graphql`
   query {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(blog)/"  }}, sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           id

@@ -16,7 +16,16 @@ const Logo = styled.p`
   @media (max-width: ${BREAKPOINT}px) {
     font-size: 28px;
   }
-`
+`;
+
+const FlexWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  a {
+    padding-right: 20px;
+  }
+`;
 
 export function HeaderLogo() {
   const logoRef = useRef(null);
@@ -45,11 +54,14 @@ export function HeaderLogo() {
   return (
     <HeaderWrapper>
       <Logo ref={logoRef}>I-S.lol</Logo>
-      <div>
+      <FlexWrapper>
+        <Link to="/blog">
+          <p>Tech</p>
+        </Link>
         <Link to="/about">
           <p>About</p>
         </Link>
-      </div>
+      </FlexWrapper>
     </HeaderWrapper>
   )
 }
