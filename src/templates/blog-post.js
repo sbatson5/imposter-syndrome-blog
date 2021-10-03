@@ -9,9 +9,11 @@ import {
   TextDate,
 } from "../components"
 
+import StyledPage from '../components/StyledPage';
+
 export default function BlogPost({data}) {
   return (
-    <>
+    <StyledPage>
       <SEO title={data.markdownRemark.frontmatter.title} />
       <HeaderBack />
       <Layout>
@@ -22,7 +24,7 @@ export default function BlogPost({data}) {
           dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}
         />
       </Layout>
-    </>
+    </StyledPage>
   )
 }
 

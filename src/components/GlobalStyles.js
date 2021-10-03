@@ -47,6 +47,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    margin: 0;
+    overflow-x: hidden;
     background-color: var(--light-color);
     color: var(--dark-color);
     font-family: 'Inter', sans-serif;

@@ -10,6 +10,7 @@ import {
   TextBody,
   TextDate,
 } from '../components';
+import StyledPage from '../components/StyledPage';
 import { BREAKPOINT } from '../utils/constants';
 import setupCursor from '../utils/setup-cursor';
 import 'prismjs/themes/prism-tomorrow.css';
@@ -62,7 +63,7 @@ export default function Home({data}) {
   }, []);
 
   return (
-    <>
+    <StyledPage>
       <div className="cursor">
         <div className="cursor__ball js-cursor">
           <svg height="30" width="30">
@@ -89,7 +90,7 @@ export default function Home({data}) {
           </Link>
         ))}
       </Layout>
-    </>
+    </StyledPage>
   )
 }
 
