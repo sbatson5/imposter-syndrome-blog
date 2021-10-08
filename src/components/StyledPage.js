@@ -6,6 +6,7 @@ import { TopSquare, SecondSquare } from '.';
 const StyledPage = ({ children }) => {
   const [docHeight, setDocHeight] = useState(0);
   const squareRef = useRef(null);
+  const secondSquareRef = useRef(null);
 
   const animateSquareIn = () => {
     const element = squareRef.current;
@@ -29,9 +30,12 @@ const StyledPage = ({ children }) => {
     });
   };
 
-  const animateSquareOut = () => {
-    const element = squareRef.current;
-    const layout = document.querySelector('.Layout__Content-knJmYi');
+  const animateSecondSquareOut = () => {
+    const element = secondSquareRef.current;
+
+    if (!element) {
+      return;
+    }
 
     gsap.to(element, {
       duration: 0.75,
@@ -41,7 +45,27 @@ const StyledPage = ({ children }) => {
 
     gsap.to(element, {
       delay: 0.25,
+      duration: 1,
+      x: 4000,
+      ease: "power2.in"
+    });
+  };
+
+  const animateSquareOut = () => {
+    const element = squareRef.current;
+    const layout = document.querySelector('.Layout__Content-knJmYi');
+
+    animateSecondSquareOut();
+
+    gsap.to(element, {
       duration: 0.75,
+      transform: 'rotate(0deg)',
+      ease: "power2.in"
+    });
+
+    gsap.to(element, {
+      delay: 0.25,
+      duration: 1,
       x: -4000,
       ease: "power2.in"
     });
@@ -87,7 +111,7 @@ const StyledPage = ({ children }) => {
   return (
     <>
       <TopSquare ref={squareRef} />
-      {docHeight > 4000 && <SecondSquare />}
+      {docHeight > 4000 && <SecondSquare ref={secondSquareRef} />}
       {children}
     </>
   )

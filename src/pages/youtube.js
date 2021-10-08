@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {Link, graphql} from 'gatsby';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import {
   HeaderLogo,
@@ -8,10 +8,9 @@ import {
   Layout,
   SEO,
   TextBody,
-  TextDate,
 } from '../components';
-import StyledPage from '../components/StyledPage';
 import { BREAKPOINT } from '../utils/constants';
+import StyledPage from '../components/StyledPage';
 import setupCursor from '../utils/setup-cursor';
 import 'prismjs/themes/prism-tomorrow.css';
 
@@ -45,18 +44,33 @@ const Post = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     padding-left: 0;
   }
-`
+`;
 
-const textAboutMe = [
-  'I\'m a software engineer and writer but am not particularly good at either',
-  'I\'m just a boy, standing in front of a blank screen, asking it to love him',
-  'I\'m my mother\'s favorite Scott.  ...Well, favorite after Scott Bakula',
-  'If you like tech and writing and reading about tech and writing then... you\'re probably me...'
-];
+const FlexWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+`;
 
-const randomNumber = Math.floor(Math.random() * textAboutMe.length);
+export default function Youtube() {
 
-export default function Home({data}) {
+  const data = [
+    {
+      url: 'https://www.youtube.com/watch?v=X9AggnaEXrM',
+      id: 'X9AggnaEXrM',
+      title: 'Build a JSON API with Elixir / Phoenix in under an hour',
+      description: 'I walk through how to build a RESTful, JSON API with Elixir and Phoenix and deploy it to heroku. I walk through contexts, migrations and the basics of elixir.',
+      category: 'elixir'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=ljLxZw-XStw',
+      id: 'ljLxZw-XStw',
+      title: 'Ember-CLI Tutorial - Working with Ember Data and external API\'s',
+      description: 'Stuff',
+      category: 'ember'
+    }
+  ];
+
   useEffect(() => {
     setupCursor();
   }, []);
@@ -70,21 +84,21 @@ export default function Home({data}) {
           </svg>
         </div>
       </div>
-      <SEO title="Home" />
+      <SEO title="YouTube" />
       <HeaderLogo />
       <Layout>
         <Hero>
           <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
-          <TextHome>
-            {textAboutMe[randomNumber]}
-          </TextHome>
+          <TextHome>My programming YouTube videos</TextHome>
         </Hero>
-        {data.allMarkdownRemark.edges.map(({node}) => (
-          <Link to={node.frontmatter.slug} key={node.id}>
-            <Post className="js-cursor-target">
-              <HeadingL>{node.frontmatter.title}</HeadingL>
-              <TextBody>{node.frontmatter.description}</TextBody>
-              <TextDate>{node.frontmatter.date}</TextDate>
+        {data.map((node) => (
+          <Link to={node.url} key={node.id} className="js-cursor-target">
+            <Post>
+              <HeadingL>{node.title}</HeadingL>
+              <FlexWrapper>
+                <img src={`https://i.ytimg.com/vi/${node.id}/mqdefault.jpg`} />
+                <TextBody style={{ paddingLeft: '20px' }}>{node.description}</TextBody>
+              </FlexWrapper>
             </Post>
           </Link>
         ))}
@@ -92,21 +106,3 @@ export default function Home({data}) {
     </StyledPage>
   )
 }
-
-export const data = graphql`
-  query {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            description
-            slug
-          }
-        }
-      }
-    }
-  }
-`
