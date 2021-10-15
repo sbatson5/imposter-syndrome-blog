@@ -33,7 +33,7 @@ const FlexWrapper = styled.div`
 export function HeaderLogo() {
   const logoRef = useRef(null);
 
-  const isOnHome = window.location.pathname === '/';
+  const isOnHome = window?.location?.pathname === '/';
 
   const loopAnimation = () => {
     const element = logoRef.current;
