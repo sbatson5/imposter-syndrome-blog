@@ -50,7 +50,7 @@ export default function Home({data}) {
   return (
     <>
       <Spotlight />
-      <SEO title="Home" />
+      <SEO title="Imposter Syndrome" />
       <HeaderLogo />
       <Layout>
         <Hero>
