@@ -117,8 +117,6 @@ At least I enjoyed learning and maybe I could work on some cool side projects.
 
 As fate would have it though, I came across a really interesting job posting.
 
-![Society of Grownups Banner](https://www.societyofgrownups.com/assets/images/bg-homepage-hero.jpg)
-
 ## Society of Grownups
 
 There was a startup in Boston called "Society of Grownups" and the job posting said that they were looking for junior developers.

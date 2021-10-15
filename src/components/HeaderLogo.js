@@ -2,7 +2,10 @@ import React, { useEffect, useRef } from "react"
 import gsap from 'gsap';
 import {Link} from "gatsby"
 import styled from "styled-components"
-import {FixedBar} from "../components"
+import {
+  FixedBar,
+  BackButton,
+} from "../components"
 import {BREAKPOINT} from "../utils/constants"
 
 const HeaderWrapper = styled(FixedBar)`
@@ -30,6 +33,8 @@ const FlexWrapper = styled.div`
 export function HeaderLogo() {
   const logoRef = useRef(null);
 
+  const isOnHome = window.location.pathname === '/';
+
   const loopAnimation = () => {
     const element = logoRef.current;
     gsap.to(element, {
@@ -53,12 +58,15 @@ export function HeaderLogo() {
 
   return (
     <HeaderWrapper>
-      <Logo ref={logoRef}>I-S.lol</Logo>
+      {isOnHome ? <Logo ref={logoRef}>I-S.lol</Logo> : <BackButton />}
       <FlexWrapper>
-        <Link className="nav-link" to="/blog">
-          <span>Tech</span>
+        <Link className="nav-link" to="/" activeClassName="active-link">
+          <span>Blog</span>
         </Link>
-        <Link className="nav-link" to="/about">
+        <Link className="nav-link" to="/youtube" activeClassName="active-link">
+          <span>YouTube</span>
+        </Link>
+        <Link className="nav-link" to="/about" activeClassName="active-link">
           <span>About</span>
         </Link>
       </FlexWrapper>

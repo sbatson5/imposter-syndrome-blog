@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import {
   Button,
-  HeaderBack,
+  HeaderLogo,
   HeadingXL,
   Image,
   Layout,
@@ -14,7 +14,7 @@ export default function About({data}) {
   return (
     <>
       <SEO title="About" />
-      <HeaderBack />
+      <HeaderLogo />
       <Layout>
         <HeadingXL>About Me</HeadingXL>
         <Image fluid={data.RandomPhoto.childImageSharp.fluid} />
@@ -24,9 +24,9 @@ export default function About({data}) {
           <br />
           I majored in English (haha) and graduated from college in 2008... literally, the worst
           year to graduate in the past 100 years. Surprising no one, I wasn&lsquo;t able to find a job
-          right after college. I worked as a bank teller, sales associate at Best Buy before
+          right after college. I worked as a bank teller and sales associate at Best Buy before
           landing a job in Tech Support at a software company. I stayed there for 4 years and
-          slowly learned more about software development. I took night classes at my local
+          slowly learned more about software development and the web. I took night classes at my local
           community college for 3 years before landing my first job as a web developer.
           <br />
           <br />
@@ -37,7 +37,7 @@ export default function About({data}) {
           <br />
           <br />
           I am available for freelance work, but find that I can&lsquo;t commit to more than 10 hours
-          a week. So if I am already on a contract, I may not have the capacity to take on more work.
+          a week. If that works for you or you just want to chat about tech, feel free to reach out!
         </TextBody>
         <Button href="mailto:scott.batson&#64;imposter-syndrome.lol">Get in touch</Button>
       </Layout>
@@ -47,7 +47,7 @@ export default function About({data}) {
 
 export const data = graphql`
   query {
-    RandomPhoto: file(relativePath: {eq: "assets/images/RandomPhoto.jpg"}) {
+    RandomPhoto: file(relativePath: {eq: "assets/images/mac.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1400) {
           ...GatsbyImageSharpFluid_withWebp

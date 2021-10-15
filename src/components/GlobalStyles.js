@@ -171,6 +171,12 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .active-link {
+    span {
+      border-bottom: 2px solid var(--accent-color);
+    }
+  }
+
   /* Make images easier to work with */
   img {
     display: block;

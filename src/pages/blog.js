@@ -9,11 +9,10 @@ import {
   SEO,
   TextBody,
   TextDate,
+  Spotlight,
 } from '../components';
 import { BREAKPOINT } from '../utils/constants';
-import setupCursor from '../utils/setup-cursor';
 import 'prismjs/themes/prism-tomorrow.css';
-import { useEffect } from 'react';
 
 const Hero = styled.div`
   margin-bottom: 20vh;
@@ -48,19 +47,9 @@ const Post = styled.div`
 `
 
 export default function Home({data}) {
-  useEffect(() => {
-    setupCursor();
-  }, []);
-
   return (
     <>
-      <div className="cursor">
-        <div className="cursor__ball js-cursor">
-          <svg height="30" width="30">
-            <circle cx="15" cy="15" r="12" strokeWidth="0"></circle>
-          </svg>
-        </div>
-      </div>
+      <Spotlight />
       <SEO title="Home" />
       <HeaderLogo />
       <Layout>

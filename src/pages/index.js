@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {Link, graphql} from 'gatsby';
 import styled from 'styled-components';
 import {
@@ -9,9 +9,9 @@ import {
   SEO,
   TextBody,
   TextDate,
+  Spotlight,
 } from '../components';
 import { BREAKPOINT } from '../utils/constants';
-import setupCursor from '../utils/setup-cursor';
 import 'prismjs/themes/prism-tomorrow.css';
 
 const Hero = styled.div`
@@ -46,36 +46,17 @@ const Post = styled.div`
   }
 `
 
-const textAboutMe = [
-  'I\'m a software engineer and writer but am not particularly good at either',
-  'I\'m just a boy, standing in front of a blank screen, asking it to love him',
-  'I\'m my mother\'s favorite Scott.  ...Well, favorite after Scott Bakula',
-  'If you like tech and writing and reading about tech and writing then... you\'re probably me...'
-];
-
-const randomNumber = Math.floor(Math.random() * textAboutMe.length);
-
 export default function Home({data}) {
-  useEffect(() => {
-    setupCursor();
-  }, []);
-
   return (
     <>
-      <div className="cursor">
-        <div className="cursor__ball js-cursor">
-          <svg height="30" width="30">
-            <circle cx="15" cy="15" r="12" strokeWidth="0"></circle>
-          </svg>
-        </div>
-      </div>
+      <Spotlight />
       <SEO title="Home" />
       <HeaderLogo />
       <Layout>
         <Hero>
           <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
           <TextHome>
-            {textAboutMe[randomNumber]}
+            Everyone deserves a blog and this is mine
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (
