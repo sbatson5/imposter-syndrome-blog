@@ -55,11 +55,11 @@ export function HeaderLogo() {
     <HeaderWrapper>
       <Logo ref={logoRef}>I-S.lol</Logo>
       <FlexWrapper>
-        <Link to="/blog">
-          <p>Tech</p>
+        <Link className="nav-link" to="/blog">
+          <span>Tech</span>
         </Link>
-        <Link to="/about">
-          <p>About</p>
+        <Link className="nav-link" to="/about">
+          <span>About</span>
         </Link>
       </FlexWrapper>
     </HeaderWrapper>

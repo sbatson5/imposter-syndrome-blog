@@ -165,6 +165,12 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: space-around;
   }
 
+  .nav-link {
+    span:hover {
+      border-bottom: 2px solid var(--accent-color);
+    }
+  }
+
   /* Make images easier to work with */
   img {
     display: block;
