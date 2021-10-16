@@ -49,6 +49,10 @@ const FlexWrapper = styled.div`
   display: flex;
   flex-direction: row;
   padding-bottom: 5px;
+
+  @media (max-width: ${BREAKPOINT}px) {
+    display: block;
+  }
 `;
 
 export default function Youtube() {

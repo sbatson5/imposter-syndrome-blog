@@ -139,6 +139,12 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration-skip-ink: auto;
   }
 
+  .blog-post {
+    @media (max-width: ${BREAKPOINT}px) {
+      font-size: 0.75em;
+    }
+  }
+
   /* A elements that don't have a class get default styles */
   .blog-post a:not([class]) {
     text-decoration: underline;
@@ -195,7 +201,16 @@ export const GlobalStyles = createGlobalStyle`
     border-radius: 50%;
 
     @media (max-width: ${BREAKPOINT}px) {
-      padding: 15px;
+      padding: 11px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  code[class*="language-"] {
+    @media (max-width: ${BREAKPOINT}px) {
+      font-size: 0.7em;
+      line-height: 0.75;
     }
   }
 
