@@ -169,6 +169,10 @@ export const GlobalStyles = createGlobalStyle`
     span:hover {
       border-bottom: 2px solid var(--accent-color);
     }
+
+    @media (max-width: ${BREAKPOINT}px) {
+      font-size: 16px;
+    }
   }
 
   .active-link {

@@ -17,7 +17,7 @@ const Logo = styled.p`
   font-weight: 700;
 
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 28px;
+    font-size: 18px;
   }
 `;
 

@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import {
   HeaderLogo,
   HeadingXL,
-  HeadingL,
   Layout,
   SEO,
   TextBody,
   TextDate,
   Spotlight,
+  BlogHeading,
 } from '../components';
 import { BREAKPOINT } from '../utils/constants';
 import 'prismjs/themes/prism-tomorrow.css';
@@ -62,7 +62,7 @@ export default function Home({data}) {
         {data.allMarkdownRemark.edges.map(({node}) => (
           <Link to={node.frontmatter.slug} key={node.id}>
             <Post className="js-cursor-target">
-              <HeadingL>{node.frontmatter.title}</HeadingL>
+              <BlogHeading>{node.frontmatter.title}</BlogHeading>
               <TextBody>{node.frontmatter.description}</TextBody>
               <TextDate>{node.frontmatter.date}</TextDate>
             </Post>
