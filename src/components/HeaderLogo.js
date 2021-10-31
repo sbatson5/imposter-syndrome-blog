@@ -66,6 +66,9 @@ export function HeaderLogo() {
         <Link className="nav-link" to="/youtube" activeClassName="active-link">
           <span>YouTube</span>
         </Link>
+        <Link className="nav-link" to="/open-source" activeClassName="active-link">
+          <span>OSS</span>
+        </Link>
         <Link className="nav-link" to="/about" activeClassName="active-link">
           <span>About</span>
         </Link>

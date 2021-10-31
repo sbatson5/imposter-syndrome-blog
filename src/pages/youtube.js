@@ -55,8 +55,21 @@ const FlexWrapper = styled.div`
   }
 `;
 
-export default function Youtube() {
+const LeftImage = ({ node }) => 
+  <FlexWrapper>
+    <img style={{ opacity: 0.8 }} src={`https://i.ytimg.com/vi/${node.id}/mqdefault.jpg`} />
+    <TextBody style={{ paddingLeft: '20px' }}>{node.description}</TextBody>
+  </FlexWrapper>;
 
+const RightImage = ({ node }) => 
+  <FlexWrapper>
+    <TextBody>{node.description}</TextBody>
+    <img style={{ opacity: 0.8, paddingLeft: '20px' }} src={`https://i.ytimg.com/vi/${node.id}/mqdefault.jpg`} />
+  </FlexWrapper>;
+
+// TODO: This component isn't technically static
+
+export default function Youtube() {
   const data = [
     {
       url: 'https://www.youtube.com/watch?v=X9AggnaEXrM',
@@ -118,14 +131,14 @@ export default function Youtube() {
       url: 'https://www.youtube.com/watch?v=LtOAbva-S7Q',
       id: 'LtOAbva-S7Q',
       title: 'Ember-CLI Tutorial - Working with Services part 1',
-      description: 'In this video, I cover the basics of working with Services. I cover how to stub a session, redirect users if they are not logged in and direct them back once they have completed logging in.  I also go over why services are important as we move away from controllers.',
+      description: 'In this video, I cover the basics of working with Services. I cover how to stub a session, redirect users if they are not logged in and direct them back once they have completed logging in.',
       category: 'ember'
     },
     {
       url: 'https://www.youtube.com/watch?v=2x59kcI6lGY',
       id: 'LtOAbva-S7Q',
       title: 'Ember-CLI Tutorial - Working with Services part 2',
-      description: 'In Part 2, I go over a slightly more advanced example of an Ember Service. In part 1, I covered storing a transition when a user attempts to access a route without logging in.  In this video, I go over how we can log a user out after remaining inactive for too long and how we can test this properly.',
+      description: 'I go over a slightly more advanced example of an Ember Service. In this video, I go over how we can log a user out after remaining inactive for too long and how we can test this properly.',
       category: 'ember'
     },
     {
@@ -165,17 +178,14 @@ export default function Youtube() {
       <HeaderLogo />
       <Layout>
         <Hero>
-          <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
-          <TextHome>My programming YouTube videos</TextHome>
+          <HeadingXL>YouTube Tutorials</HeadingXL>
+          <TextHome>I&lsquo;ve done a few programming tutorials on YouTube. Mostly for Ember, but a few for Elixir that have somehow managed to get quite a few views.</TextHome>
         </Hero>
-        {data.map((node) => (
+        {data.map((node, index) => (
           <Link to={node.url} key={node.id} className="js-cursor-target">
             <Post>
               <HeadingL>{node.title}</HeadingL>
-              <FlexWrapper>
-                <img style={{ opacity: 0.8 }} src={`https://i.ytimg.com/vi/${node.id}/mqdefault.jpg`} />
-                <TextBody style={{ paddingLeft: '20px' }}>{node.description}</TextBody>
-              </FlexWrapper>
+              {index % 2 === 0 ? <LeftImage node={node} /> : <RightImage node={node} />}
             </Post>
           </Link>
         ))}
