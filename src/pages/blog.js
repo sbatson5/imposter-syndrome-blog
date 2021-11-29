@@ -3,7 +3,6 @@ import {Link, graphql} from 'gatsby';
 import styled from 'styled-components';
 import {
   HeaderLogo,
-  HeadingXL,
   HeadingL,
   Layout,
   SEO,
@@ -11,6 +10,7 @@ import {
   TextDate,
   Spotlight,
 } from '../components';
+import ImposterSyndromeHeader from '../components/ImposterSyndromHeader';
 import { BREAKPOINT } from '../utils/constants';
 import 'prismjs/themes/prism-tomorrow.css';
 
@@ -54,7 +54,7 @@ export default function Home({data}) {
       <HeaderLogo />
       <Layout>
         <Hero>
-          <HeadingXL>Imposter-Syndrome.lol</HeadingXL>
+          <ImposterSyndromeHeader />
           <TextHome>Tech Blog</TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (

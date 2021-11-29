@@ -158,6 +158,7 @@ export const GlobalStyles = createGlobalStyle`
   h1::selection,
   p::selection,
   h2::selection,
+  .Typewriter__wrapper::selection,
   .TextBody-DPQTQ::selection, 
   .TextBody-DPQTQ p::selection, 
   .TextBody-DPQTQ a:not([class])::selection, 
