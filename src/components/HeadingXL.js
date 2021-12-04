@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import {BREAKPOINT} from "../utils/constants"
+import styled from 'styled-components';
+import { BREAKPOINT, MOBILE_BREAKPOINT } from '../utils/constants';
 
 export const HeadingXL = styled.h1`
   color: black;
@@ -13,5 +13,9 @@ export const HeadingXL = styled.h1`
 
   @media (max-width: ${BREAKPOINT}px) {
     font-size: 45px;
+  }
+
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    font-size: 30px;
   }
 `
