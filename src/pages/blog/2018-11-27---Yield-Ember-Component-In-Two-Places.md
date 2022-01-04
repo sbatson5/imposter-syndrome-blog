@@ -25,7 +25,7 @@ First off, let me qualify this by saying that there are a ton of different ways 
 
 For a normal component, your template may look this:
 
-```html
+```HTML
 <section class="your-content">
   <div class="your-content__inner">
     {{yield}}
@@ -36,7 +36,7 @@ For a normal component, your template may look this:
 
 It gives us a `section` with a preset class, a button with an `action` that lives on the components JavaScript file, and then gives us a `yield` where users can put any content they want. They would use it like this:
 
-```html
+```HTML
 {{#cool-component}}
   <p class="your-content__text">Hi there!</p>
 {{/cool-component}}
@@ -47,7 +47,7 @@ Your `p` tag with “Hi there!” shows up in the `yield` block. Pretty straight
 
 Let’s keep it simple for now. This is what your ideal component would look like:
 
-```html
+```HTML
 <div class="toolbar__context">
   {{close-icon close=(action "close")}} {{!-- just an svg --}}
   {{yield}} {{!-- custom text i.e. "1 selected" --}}
@@ -65,14 +65,14 @@ This is where [contextual components](https://guides.emberjs.com/release/compone
 
 Blog-post component:
 
-```html
+```HTML
 <h2>{{title}}</h2>
 <div class="body">{{yield (hash body=(component editStyle))}}</div>
 ```
 
 Which can be used like this:
 
-```html
+```HTML
 {{#blog-post editStyle="markdown-style" postData=myText as |post|}}
   <p class="author">by {{author}}</p>
   {{post.body}}
@@ -96,13 +96,13 @@ In the component file, we specify `tagName` is empty because we don’t want to 
 
 Our template then looks really simple:
 
-```html
+```HTML
 {{yield}}
 ```
 
 That’s it. This blank component does nothing but yield what we give it. So, how does this help us with our toolbar? Well, now we can do this:
 
-```html
+```HTML
 <div class="toolbar__context">
   {{close-icon}}
   {{yield (hash context="(component blank-template"))}}
@@ -115,7 +115,7 @@ That’s it. This blank component does nothing but yield what we give it. So, ho
 
 We use the `hash` helper again but rather than selecting a dynamic component, we point it right to `blank-template` (and no, you don’t need to specify component). We give each yield’s hash its own name. The first is `context`, which is where we expect users to put a description of the toolbar (if they want it) and `actions` is where we expect them to put buttons. They would use it like this:
 
-```html
+```HTML
 {{#fancy-toolbar as |toolbar|}}
   {{#toolbar.context}}
     <p class="toolbar__context__text">Hi there</p>

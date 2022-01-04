@@ -24,7 +24,7 @@ Recently, we started building a web application for Netflix that allows users to
 # Reading a CSV File
 The first thing we need is an input that allows us to upload a file. So, we create a new component with `ember g component file-upload`. Our template looks like this:
 
-```html
+```HTML
 <input type="file" name="csv" accept=".csv">
 <button type="submit">Submit</button>
 ```

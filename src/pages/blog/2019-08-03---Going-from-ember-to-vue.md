@@ -95,7 +95,7 @@ First of all, you aren't writing JSX -- you are writing plain ol' HTML.
 
 Here is a typical setup for a component in Vue:
 
-```html
+```HTML
 <template>
   <div>
     <SomeCustomComponent :title="title" @click="someMethod" />
@@ -162,7 +162,7 @@ Again, this is something in an RFC for Ember already but it cements a point I ma
 When using a component, we have similar patterns as Ember.
 You need to append a `:` to properties you pass down to a component.
 So, if my parent component has a property called `author` and I want to pass `author.name` down to a child component as `fullname`, here is how it would by comparison: 
-```html
+```HTML
 <!-- Vue -->
 <AuthorInfo :fullname="author.name" />
 <!-- Ember -->
@@ -185,7 +185,7 @@ If you are doing something that updates application state, then `emit` and passi
 
 One of the things I disliked with the actions helper in Ember was that I might not always pass an action down for every instance of my component.
 Say you had a component like this in Ember: 
-```html
+```HTML
 <!-- Ember component -->
 <AuthorInfo @updateProfile={{action "updateProfile"}} />
 ```
