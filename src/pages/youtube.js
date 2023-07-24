@@ -72,6 +72,27 @@ const RightImage = ({ node }) =>
 export default function Youtube() {
   const data = [
     {
+      url: 'https://www.youtube.com/watch?v=UsGjTZEaV0w',
+      id: 'UsGjTZEaV0w',
+      title: 'Build React Native modules with Swift',
+      description: 'Learn how to build native components for iOS in React Native using Swift without Expo.',
+      category: 'react'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=AtBMic7dwGk',
+      id: 'AtBMic7dwGk',
+      title: 'React\'s useRef and how it works',
+      description: 'Ever wonder when to use the `useRef` hook in React?',
+      category: 'react'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=NEA9K3sIoaY',
+      id: 'NEA9K3sIoaY',
+      title: 'React\'s useState deep dive in 30 minutes',
+      description: 'A deep dive into how the useState hook works in React.',
+      category: 'react'
+    },
+    {
       url: 'https://www.youtube.com/watch?v=X9AggnaEXrM',
       id: 'X9AggnaEXrM',
       title: 'Build a JSON API with Elixir / Phoenix in under an hour',
