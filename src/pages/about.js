@@ -36,6 +36,10 @@ export default function About({data}) {
           <Link href="https://www.amazon.com/dp/B093RP1C7G">Issue 78 of Leading Edge Magazine</Link>
           <br />
           <br />
+          It is also available as a standalone novelette with custom art:
+          <Link href="https://www.amazon.com/dp/B0CCR4QLZZ">Issue 78 of Leading Edge Magazine</Link>
+          <br />
+          <br />
           I am available for freelance work, but find that I can&lsquo;t commit to more than 10 hours
           a week. If that works for you or you just want to chat about tech, feel free to reach out!
         </TextBody>
