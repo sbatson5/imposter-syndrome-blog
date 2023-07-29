@@ -1,6 +1,6 @@
 import threadableImage from '../assets/images/projects/threadable.png';
 import covidImage from '../assets/images/projects/covid.png';
-import allPassImage from '../assets/images/projects/allPass.jpg';
+import allPassImage from '../assets/images/projects/allpass.jpg';
 import moveImage from '../assets/images/projects/move.png';
 import netflixImage from '../assets/images/projects/netflix.png';
 import mdaImage from '../assets/images/projects/mda.png';
