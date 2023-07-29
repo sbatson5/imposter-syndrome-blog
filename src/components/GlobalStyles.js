@@ -155,9 +155,7 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 50px;
   }
 
-  h1::selection,
-  p::selection,
-  h2::selection,
+  *::selection,
   .Typewriter__wrapper::selection,
   .TextBody-DPQTQ::selection, 
   .TextBody-DPQTQ p::selection, 

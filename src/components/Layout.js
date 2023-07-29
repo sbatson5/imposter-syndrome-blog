@@ -11,16 +11,19 @@ const Wrapper = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     padding: 0 var(--sides-padding-mobile);
   }
-`
+`;
 
-const Content = styled.main`
+const FullContent = styled.main`
   margin: 0 auto;
-  max-width: 900px;
 
   @media (max-width: ${BREAKPOINT}px) {
     width: 100%;
   }
-`
+`;
+
+const Content = styled(FullContent)`
+  max-width: 900px;
+`;
 
 export function Layout({children}) {
   return (
@@ -28,6 +31,18 @@ export function Layout({children}) {
       <GlobalStyles />
       <Wrapper>
         <Content>{children}</Content>
+        <Footer />
+      </Wrapper>
+    </>
+  )
+}
+
+export function FullLayout({children}) {
+  return (
+    <>
+      <GlobalStyles />
+      <Wrapper>
+        <FullContent>{children}</FullContent>
         <Footer />
       </Wrapper>
     </>
