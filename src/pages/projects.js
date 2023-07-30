@@ -37,7 +37,11 @@ export default function Projects() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const selectProject = (index) => {
-    setSelectedIndex(index);
+    if (index === selectedIndex) {
+      setSelectedIndex(null);
+    } else {
+      setSelectedIndex(index);
+    }
   };
 
   return (

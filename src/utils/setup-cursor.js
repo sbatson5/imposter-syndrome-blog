@@ -1,6 +1,12 @@
 import gsap from 'gsap';
 
 function setupCursor() {
+  const userAgent = window.navigator.userAgent;
+
+  if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+    return;
+  }
+
   const cursor = document.querySelector('.js-cursor');
   const hoverables = document.querySelectorAll('.js-cursor-target');
 
