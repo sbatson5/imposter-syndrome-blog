@@ -37,7 +37,7 @@ export default function About({data}) {
           <br />
           <br />
           It is also available as a standalone novelette with custom art:
-          <Link href="https://www.amazon.com/dp/B0CCR4QLZZ">Issue 78 of Leading Edge Magazine</Link>
+          <Link href="https://www.amazon.com/dp/B0CCR4QLZZ">The Shtriga</Link>
           <br />
           <br />
           I am available for freelance work, but find that I can&lsquo;t commit to more than 10 hours

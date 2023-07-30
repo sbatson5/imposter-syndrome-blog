@@ -113,7 +113,7 @@ export default [
     county-by-county results, and visualizations of voter survey responses. All of these are populated in real time by a
     data feed from the Associated Press. Editors access a dashboard where they can power broadcast graphics, 
     download perfectly-sized social images, and copy small code snippets to use the live-updated graphics anywhere on the web. 
-    <a href="/posts/building-custom-web-components/">Read more about our web component approach.</a>
+    <a class="underline" href="/posts/building-custom-web-components/">Read more about our web component approach.</a>
 `,
     images: [pbsImage],
     videos: [pbsVideo]
@@ -135,7 +135,7 @@ export default [
     as the ultimate source of truth, connecting all these systems to give developers an easy-to-use RESTful API.
     <br />
     <br />
-    <a href="/posts/see-you-later-generator/">Read more about how we solved some concurrency issues with slow requests.</a>`,
+    <a class="underline" href="/posts/see-you-later-generator/">Read more about how we solved some concurrency issues with slow requests.</a>`,
     images: [mdaImage],
     videos: [mdaVideo]
   },
@@ -165,7 +165,7 @@ export default [
     Built with Ember.js and Elixir Phoenix on the backend, SoG was meant to be an educational tool for teaching financial 
     literacy. Apart from working on the web app that linked your bank accounts and credit cards together, I lead our
     online classes project. Working with the Wistia API (and later creating an 
-    <a href="https://github.com/sbatson5/ember-wistia">open source project from it</a>), we built interactive online
+    <a class="underline" href="https://github.com/sbatson5/ember-wistia">open source project from it</a>), we built interactive online
     courses about budgeting, investing, and more.
     <br />
     <br />
@@ -183,7 +183,7 @@ export default [
     <br />
     <br />
     During this project, I dove into open source, becoming a main contributor to Ember.js, Ember Data, and was the
-    top maintainer of <a href="https://github.com/adopted-ember-addons/ember-cli-flash">ember-cli-flash</a>, 
+    top maintainer of <a class="underline" href="https://github.com/adopted-ember-addons/ember-cli-flash">ember-cli-flash</a>, 
     a package that was being downloaded 50,000 times a week at the time.
     `,
     images: [sogImage],

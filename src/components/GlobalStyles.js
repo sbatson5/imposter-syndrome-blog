@@ -85,6 +85,10 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-tap-highlight-color: transparent;
   }
 
+  a.underline {
+    box-shadow: inset 0 -1px 0 0 hsl(240,100%,70%, 1);
+  }
+
   h2 {
     font-size: 2em;
     letter-spacing: -1px;
