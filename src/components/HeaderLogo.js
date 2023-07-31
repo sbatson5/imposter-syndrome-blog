@@ -60,19 +60,19 @@ export function HeaderLogo() {
     <HeaderWrapper>
       {isOnHome ? <Logo ref={logoRef}>I-S.lol</Logo> : <BackButton />}
       <FlexWrapper>
-        <Link className="nav-link" to="/" activeClassName="active-link">
+        <Link className="nav-link custom-pointer" to="/" activeClassName="active-link">
           <span>Blog</span>
         </Link>
-        <Link className="nav-link" to="/projects" activeClassName="active-link">
+        <Link className="nav-link custom-pointer" to="/projects" activeClassName="active-link">
           <span>Projects</span>
         </Link>
-        <Link className="nav-link" to="/youtube" activeClassName="active-link">
+        <Link className="nav-link custom-pointer" to="/youtube" activeClassName="active-link">
           <span>YouTube</span>
         </Link>
-        <Link className="nav-link" to="/open-source" activeClassName="active-link">
+        <Link className="nav-link custom-pointer" to="/open-source" activeClassName="active-link">
           <span>OSS</span>
         </Link>
-        <Link className="nav-link" to="/about" activeClassName="active-link">
+        <Link className="nav-link custom-pointer" to="/about" activeClassName="active-link">
           <span>About</span>
         </Link>
       </FlexWrapper>

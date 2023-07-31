@@ -60,7 +60,7 @@ export default function Home({data}) {
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (
-          <Link to={node.frontmatter.slug} key={node.id}>
+          <Link to={node.frontmatter.slug} className="custom-pointer" key={node.id}>
             <Post className="js-cursor-target">
               <BlogHeading>{node.frontmatter.title}</BlogHeading>
               <TextBody>{node.frontmatter.description}</TextBody>

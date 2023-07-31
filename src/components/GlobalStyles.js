@@ -1,5 +1,6 @@
 import {createGlobalStyle} from "styled-components"
 import * as font from "../assets/fonts"
+import { linkHand } from "../assets/icons"
 import {BREAKPOINT} from "../utils/constants"
 
 export const GlobalStyles = createGlobalStyle`
@@ -87,6 +88,11 @@ export const GlobalStyles = createGlobalStyle`
 
   a.underline {
     box-shadow: inset 0 -1px 0 0 hsl(240,100%,70%, 1);
+    cursor: url(${linkHand}) 4 2, auto;
+  }
+  
+  .custom-pointer {
+    cursor: url(${linkHand}) 4 2, auto;
   }
 
   h2 {
