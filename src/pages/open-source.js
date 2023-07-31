@@ -51,7 +51,9 @@ export default function OpenSource() {
     {
       url: 'https://github.com/Upstatement/firestore-jest-mock',
       title: 'Firestore Jest Mock',
-      description: 'A library for writing test assertions against Google\'s Firestore. This grew out of a custom solution for a client project and we decided to open source it. It now gets over 7000 downloads every week.'
+      description: `A library for writing test assertions against Google's Firestore. 
+      This grew out of a custom solution for a client project and we decided to open source it. 
+      It now gets over 10,000 downloads every week and over 1 million total downloads`
     },
     {
       url: 'https://github.com/poteto/ember-cli-flash',
@@ -87,6 +89,11 @@ export default function OpenSource() {
       url: 'https://github.com/sbatson5/ember-wistia',
       title: 'Ember Wistia',
       description: 'A simple Ember component library for embedding Wistia videos and leveraging their player API'
+    },
+    {
+      url: 'https://github.com/invertase/react-native-firebase',
+      title: 'React Native Firebase',
+      description: 'A well-tested feature-rich modular Firebase implementation for React Native. Supports both iOS & Android platforms for all Firebase services.'
     }
   ];
 
