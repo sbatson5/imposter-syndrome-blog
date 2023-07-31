@@ -41,7 +41,8 @@ export default [
     through pairing, comprehensive yet compassionate code reviews, stretch goals, and being open to new ways of doing things.
     `,
     images: [threadableImage],
-    videos: [threadableVideo]
+    videos: [threadableVideo],
+    skills: ['React Native', 'Swift', 'Ruby', 'Firebase']
   },
   {
     title: 'COVID Protocols',
@@ -67,7 +68,8 @@ export default [
     <br />
     <br />`,
     images: [covidImage],
-    videos: [covidVideo]
+    videos: [covidVideo],
+    skills: ['React Native', 'Google API', 'Cloud Functions']
   },
   {
     title: 'Beacon Passport',
@@ -90,7 +92,8 @@ export default [
     approached their office building.
     `,
     images: [allPassImage],
-    videos: [beaconVideo]
+    videos: [beaconVideo],
+    skills: ['React Native', 'PWA', 'Cloud Functions', 'Geolocation']
   },
   {
     title: 'PBS NewsHour',
@@ -116,7 +119,8 @@ export default [
     <a class="underline" href="/posts/building-custom-web-components/">Read more about our web component approach.</a>
 `,
     images: [pbsImage],
-    videos: [pbsVideo]
+    videos: [pbsVideo],
+    skills: ['Web Components', 'Django']
   },
   {
     title: 'Moms Demand Action',
@@ -137,7 +141,8 @@ export default [
     <br />
     <a class="underline" href="/posts/see-you-later-generator/">Read more about how we solved some concurrency issues with slow requests.</a>`,
     images: [mdaImage],
-    videos: [mdaVideo]
+    videos: [mdaVideo],
+    skills: ['Vue', 'Express', 'NativeScript', 'Firebase']
   },
   {
     title: 'Netflix - Prodicle Move',
@@ -155,9 +160,17 @@ export default [
     <br />
     I was brought on in 2017 and after just a few months was promoted to Lead Engineer on the project, leading both this
     and one other app for Netflix. Our apps were used on shows/movies such as Stranger Things, GLOW, Bird Box, The Witcher,
-    and many more.`,
+    and many more.
+    <br />
+    <br />
+    I was the third engineer brought onto the project and after my two predecessors left, I was in charge of onboarding
+    all the new engineers to the Prodicle suite of projects (even ones I didn't work on). Over the course of 2 and a half
+    years, I onboarded and trained 7 engineers covering infrastructure, security systems, style guide, PR review process,
+    and more.
+    `,
     images: [netflixImage, moveImage],
-    videos: []
+    videos: [],
+    skills: ['PWA', 'Ember', 'Ruby on Rails', 'Twilio']
   },
   {
     title: 'Society of Grownups',
@@ -188,5 +201,6 @@ export default [
     `,
     images: [sogImage],
     videos: [sogVideo],
+    skills: ['Ember', 'Elixir Phoenix', 'PWA']
   }
 ];

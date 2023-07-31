@@ -5,6 +5,29 @@ import { BREAKPOINT, PROJECT_BREAKPOINT } from '../utils/constants';
 import 'prismjs/themes/prism-tomorrow.css';
 import gsap from 'gsap';
 
+const SKILL_COLORS_MAP = {
+  'React Native': '#4682b4',
+  'Swift': '#ff6347',
+  'PWA': '#2e8b57',
+  'Vue': '#20b2aa',
+  'NativeScript': '#66cdaa',
+  'Ember': '#E04E39',
+  'Ruby on Rails': '#CC0000',
+  'Elixir Phoenix': '#9370db',
+  'Firebase': '#ffd700',
+  'Cloud Functions': '#e6e6fa',
+  'Web Components': '#f08080',
+  'Django': '#808000',
+  'Google API': '#008b8b',
+  'Geolocation': '#00008b',
+  'Twilio': '#ff8c00'
+};
+
+const ProjectHeader = styled.div`
+  display: inline;
+  margin-right: 20px;
+`;
+
 const MoreButton = styled.button`
   background: none;
   border: none;
@@ -24,6 +47,17 @@ const ProjectText = styled.p`
     width: 100%;
   }
 `
+
+const Skill = styled.span`
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 14px;
+  border: 2px solid;
+  vertical-align: middle;
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-weight: 400;
+`;
 
 const Post = styled.div`
   border-bottom: 1px solid lightgray;
@@ -79,7 +113,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const Project = ({ node, isSelected = false, selectProject }) => {
+const Project = ({ project, isSelected = false, selectProject }) => {
   const sectionRef = useRef();
 
   const [displaySection, setDisplaySection] = useState(isSelected);
@@ -105,30 +139,35 @@ const Project = ({ node, isSelected = false, selectProject }) => {
   return (
     <Post className="js-cursor-target">
       <FlexAroundWrapper>
-        <HeadingL className="custom-pointer" onClick={selectProject}>
-          {node.title}
+        <HeadingL>
+          <ProjectHeader className="custom-pointer" onClick={selectProject}>
+            {project.title}
+          </ProjectHeader>
+          {project?.skills.map(skill => {
+            return (<Skill key={`${project.title}-${skill}`} style={{ borderColor: SKILL_COLORS_MAP[skill] }} >{skill}</Skill>);
+          })}
         </HeadingL>
         {!isSelected && <MoreButton className="custom-pointer" onClick={selectProject}>More</MoreButton>}
       </FlexAroundWrapper>
       <ContentWrapper style={{ height: '0', overflow: 'hidden' }} ref={sectionRef}>
         {displaySection &&
           <>
-            {node.images[0] &&
+            {project.images[0] &&
               <MobileImageWrapper>
-                <img src={node.images[0]} />
+                <img src={project.images[0]} />
               </MobileImageWrapper>
             }
 
-            <ProjectText dangerouslySetInnerHTML={{ __html: node.description }}></ProjectText>
+            <ProjectText dangerouslySetInnerHTML={{ __html: project.description }}></ProjectText>
 
             <ImageWrapper>
-              {node.images.map((image, index) => <img key={`image-${index}`} src={image} style={{ marginBottom: '10px' }} />)}
-              {node.videos.map((video, index) => <video key={`video-${index}`} src={video} autoPlay loop playsInline muted style={{ marginBottom: '10px' }} />)}
+              {project.images.map((image, index) => <img key={`image-${index}`} src={image} style={{ marginBottom: '10px' }} />)}
+              {project.videos.map((video, index) => <video key={`video-${index}`} src={video} autoPlay loop playsInline muted style={{ marginBottom: '10px' }} />)}
             </ImageWrapper>
 
-            {node.videos[0] &&
+            {project.videos[0] &&
               <MobileImageWrapper>
-                <video src={node.videos[0]} autoPlay loop playsInline muted />
+                <video src={project.videos[0]} autoPlay loop playsInline muted />
               </MobileImageWrapper>
             }
           </>
