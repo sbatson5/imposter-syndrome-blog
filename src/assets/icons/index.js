@@ -1,4 +1,4 @@
-import GatsbyIcon from './GatsbyIcon.png';
 import ISLOL from './is-lol.png';
+import linkHand from './link-hand.svg';
 
-export { GatsbyIcon, ISLOL };
+export { ISLOL, linkHand };

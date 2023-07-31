@@ -13,7 +13,6 @@ const MoreButton = styled.button`
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
-  cursor: pointer;
 `;
 
 const ProjectText = styled.p`
@@ -106,10 +105,10 @@ const Project = ({ node, isSelected = false, selectProject }) => {
   return (
     <Post className="js-cursor-target">
       <FlexAroundWrapper>
-        <HeadingL onClick={selectProject} style={{ cursor: 'pointer' }}>
+        <HeadingL className="custom-pointer" onClick={selectProject}>
           {node.title}
         </HeadingL>
-        {!isSelected && <MoreButton onClick={selectProject}>More</MoreButton>}
+        {!isSelected && <MoreButton className="custom-pointer" onClick={selectProject}>More</MoreButton>}
       </FlexAroundWrapper>
       <ContentWrapper style={{ height: '0', overflow: 'hidden' }} ref={sectionRef}>
         {displaySection &&
