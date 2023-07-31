@@ -57,8 +57,8 @@ export default function Projects() {
             Whether it&lsquo;s React, Vue, Ember, RoR, Elixir or a custom framework, I have worked across the stack.
           </TextHome>
         </Hero>
-        {projectData.map((node, index) => (
-          <Project node={node} key={index} isSelected={index === selectedIndex} selectProject={() => selectProject(index)} />
+        {projectData.map((project, index) => (
+          <Project project={project} key={index} isSelected={index === selectedIndex} selectProject={() => selectProject(index)} />
         ))}
       </FullLayout>
     </>
