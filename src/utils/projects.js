@@ -112,6 +112,13 @@ export default [
       </li>
     </ul>
     <br />
+    Most importantly, these components needed to do <strong>everything</strong> on their own. They should take care of
+    API requests, updating graphics, and controlling the logic for when a winner is called. They also had to be agnostic
+    of site styles, as these were used on PBS NewsHour's site but also partner sites, with different layouts and stylesheets.
+    Web components allowed us to encapsulate everything into one piece of UI and all our client had to do was copy and
+    paste an HTML element.
+    <br />
+    <br />
     The suite of components includes race results tables, “winner called” graphics, maps that let users explore 
     county-by-county results, and visualizations of voter survey responses. All of these are populated in real time by a
     data feed from the Associated Press. Editors access a dashboard where they can power broadcast graphics, 
