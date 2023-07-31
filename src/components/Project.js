@@ -26,6 +26,10 @@ const SKILL_COLORS_MAP = {
 const ProjectHeader = styled.div`
   display: inline;
   margin-right: 20px;
+
+  @media (max-width: ${PROJECT_BREAKPOINT}px) {
+    display: block;
+  }
 `;
 
 const MoreButton = styled.button`
@@ -36,6 +40,10 @@ const MoreButton = styled.button`
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: ${PROJECT_BREAKPOINT}px) {
+    display: none;
+  }
 `;
 
 const ProjectText = styled.p`
@@ -57,6 +65,10 @@ const Skill = styled.span`
   border-radius: 20px;
   padding: 2px 10px;
   font-weight: 400;
+
+  @media (max-width: ${PROJECT_BREAKPOINT}px) {
+    font-size: 14px;
+  }
 `;
 
 const Post = styled.div`
